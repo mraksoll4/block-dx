@@ -1,6 +1,6 @@
 ![BLOCK DX](BLOCKDX.png)
 
-[Download Block DX](https://github.com/blocknetdx/block-dx/releases/latest) |
+[Download Block DX](https://github.com/mraksoll4/scalaris-dx/releases/latest) |
 -------------|
 
 BLOCK DX is a decentralized exchange dApp built on top of the [Blocknet Protocol](https://api.blocknet.co). This repository is maintained by the Blocknet Core Team. We encourage the community to create dApps on top of Blocknet. Please connect with our community on [Discord](https://discord.gg/2e6s7H8). More information about Blocknet can be found on the [Blocknet website](https://blocknet.co) and [documentation portal](https://docs.blocknet.co).
@@ -33,7 +33,7 @@ This will build the installer artifacts for the current system (Windows, MacOS, 
 
 ## Pull requests
 
-Please branch off of the branch titled after the next release. For example, if the [latest release](https://github.com/blocknetdx/block-dx/releases/latest) is version 1.4.0 then look for a branch titled 1.4.1, 1.5.0, or 2.0.0.
+Please branch off of the branch titled after the next release. For example, if the [latest release](https://github.com/mraksoll4/scalaris-dx/releases/latest) is version 1.4.0 then look for a branch titled 1.4.1, 1.5.0, or 2.0.0.
 
 ## Running unit tests
 

@@ -83,7 +83,7 @@ export class NavBarComponent implements OnInit {
     e.preventDefault();
     if(window.electron.ipcRenderer.sendSync('updateError')) {
       const { openExternal } = window.electron.remote.shell;
-      openExternal('https://github.com/blocknetdx/block-dx/releases/latest');
+      openExternal('https://github.com/mraksoll4/scalaris-dx/releases/latest');
     } else {
       const status = window.electron.ipcRenderer.sendSync('checkForUpdates');
       switch(status) {
