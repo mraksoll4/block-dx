@@ -10,7 +10,7 @@ BLOCK DX is a decentralized exchange dApp built on top of the [Blocknet Protocol
 
 # Dev Instructions
 
-Block DX requires the [Blocknet wallet](https://github.com/blocknetdx/blocknet/releases/latest) and the wallets of the assets you want to view a market for to be setup and synced.
+Block DX requires the [Blocknet wallet](https://github.com/mraksoll4/scalaris/releases/latest) and the wallets of the assets you want to view a market for to be setup and synced.
 
 ## Build and run locally:
 

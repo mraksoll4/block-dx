@@ -427,7 +427,7 @@
     "dir_name_linux": "blocknet",
     "dir_name_mac": "Blocknet",
     "dir_name_win": "Blocknet",
-    "repo_url": "https://github.com/blocknetdx/blocknet",
+    "repo_url": "https://github.com/mraksoll4/scalaris",
     "versions": [
       "v4.3.0"
     ],
