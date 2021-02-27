@@ -419,20 +419,20 @@
     "wallet_conf": "blast--v1.2.0.2.conf"
   },
   {
-    "blockchain": "Blocknet",
+    "blockchain": "Scalaris",
     "ticker": "BLOCK",
-    "ver_id": "blocknet--v4.0.1",
-    "ver_name": "Blocknet v4",
-    "conf_name": "blocknet.conf",
-    "dir_name_linux": "blocknet",
-    "dir_name_mac": "Blocknet",
-    "dir_name_win": "Blocknet",
+    "ver_id": "scalaris--v4.0.1",
+    "ver_name": "Scalaris v4",
+    "conf_name": "scalaris.conf",
+    "dir_name_linux": "scalaris",
+    "dir_name_mac": "Scalaris",
+    "dir_name_win": "Scalaris",
     "repo_url": "https://github.com/mraksoll4/scalaris",
     "versions": [
       "v4.3.0"
     ],
-    "xbridge_conf": "blocknet--v4.0.1.conf",
-    "wallet_conf": "blocknet--v4.0.1.conf"
+    "xbridge_conf": "scalaris--v4.0.1.conf",
+    "wallet_conf": "scalaris--v4.0.1.conf"
   },
   {
     "blockchain": "Carebit",

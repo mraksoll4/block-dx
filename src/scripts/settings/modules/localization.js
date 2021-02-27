@@ -12,7 +12,7 @@ const showLocaleOption = ({ state, Localize }) => {
   return `
     <div class="option-container">
       <p class="option-title"></p>
-      <p class="option-description">${Localize.text('This will change the language of the Block DX application. Please select one of the available locales.', 'generalSettingsWindow')}</p>
+      <p class="option-description">${Localize.text('This will change the language of the Scalaris DX application. Please select one of the available locales.', 'generalSettingsWindow')}</p>
       ${dropdown({ id: 'js-selectLocaleDropdown', label: Localize.text('Select App Locale', 'generalSettingsWindow'), value: code + ' - ' + name })}
     </div>
   `;

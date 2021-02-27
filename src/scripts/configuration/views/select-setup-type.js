@@ -45,8 +45,8 @@ class SelectSetupType extends RouterView {
             <div class="flex-container">
               <div class="col2-no-margin">
 
-                <p style="${styles.p}">${Localize.text('Block DX is the fastest, most secure, most reliable, and most decentralized exchange, allowing for peer-to-peer trading directly from your wallet.','configurationWindowSetupType')}</p>
-                <p style="${styles.p}">${Localize.text('<strong>Prerequisites</strong>: Block DX requires the <a href="#" class="text-link js-blocknetWalletLink">latest Blocknet wallet</a> and the wallets of any assets you want to trade with. These must be downloaded and installed before continuing. See the full list of <a href="#" class="text-link js-compatibleWalletsLink">compatible assets and wallet versions</a>.','configurationWindowSetupType')}</p>
+                <p style="${styles.p}">${Localize.text('Scalaris DX is the fastest, most secure, most reliable, and most decentralized exchange, allowing for peer-to-peer trading directly from your wallet.','configurationWindowSetupType')}</p>
+                <p style="${styles.p}">${Localize.text('<strong>Prerequisites</strong>: Scalaris DX requires the <a href="#" class="text-link js-scalarisWalletLink">latest Scalaris wallet</a> and the wallets of any assets you want to trade with. These must be downloaded and installed before continuing. See the full list of <a href="#" class="text-link js-compatibleWalletsLink">compatible assets and wallet versions</a>.','configurationWindowSetupType')}</p>
                 <div class="main-area" style="${styles.mainArea}">
 
                   <div id="js-automaticCredentials" class="main-area-item" style="${styles.flexContainer}">
@@ -112,13 +112,13 @@ class SelectSetupType extends RouterView {
         $manual.removeClass('fa');
       }
     };
-    $('.js-blocknetWalletLink').on('click', e => {
+    $('.js-scalarisWalletLink').on('click', e => {
       e.preventDefault();
       remote.shell.openExternal('https://github.com/mraksoll4/scalaris/releases/latest');
     });
     $('.js-compatibleWalletsLink').on('click', e => {
       e.preventDefault();
-      remote.shell.openExternal('https://docs.blocknet.co/blockdx/listings/#listed-digital-assets');
+      remote.shell.openExternal('https://docs.scalaris.info/scalarisdx/listings/#listed-digital-assets');
     });
     $('#js-automaticCredentials').on('click', e => toggleCredentialGeneration(e, true));
     $('#js-manualCredentials').on('click', e => toggleCredentialGeneration(e, false));
@@ -139,21 +139,21 @@ class SelectSetupType extends RouterView {
         const newWallets = wallets
           .map(w => {
             if(configurationType === configurationTypes.ADD_NEW_WALLETS && w.abbr === 'BLOCK') {
-              // it will use custom Blocknet directory if one has been previously set, otherwise it will fall back to the default directory
+              // it will use custom Scalaris directory if one has been previously set, otherwise it will fall back to the default directory
               return w.set('directory', w.getCustomDirectory());
             } else {
               return w.set('directory', w.getDefaultDirectory());
             }
           });
         state.set('wallets', newWallets);
-        const blocknetWallet = newWallets.find(w => w.abbr === 'BLOCK');
-        const dir = blocknetWallet.directory;
+        const scalarisWallet = newWallets.find(w => w.abbr === 'BLOCK');
+        const dir = scalarisWallet.directory;
         try {
           fs.statSync(dir);
           router.goTo(route.SELECT_WALLET_VERSIONS);
         } catch(err) {
           swal({
-            text: Localize.text('An installation of the Blocknet wallet was not found, but is required to use Block DX. Please install the Blocknet wallet before continuing.','configurationWindowSetupType'),
+            text: Localize.text('An installation of the Scalaris wallet was not found, but is required to use Scalaris DX. Please install the Scalaris wallet before continuing.','configurationWindowSetupType'),
             type: 'warning'
           });
         }

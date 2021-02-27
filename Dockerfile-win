@@ -1,20 +1,20 @@
 FROM electronuserland/builder:wine
 
 # Create app directory
-RUN mkdir -p /opt/block-dx/dist-native
+RUN mkdir -p /opt/scalaris-dx/dist-native
 
-WORKDIR /opt/block-dx/
-VOLUME /opt/block-dx/dist-native
+WORKDIR /opt/scalaris-dx/
+VOLUME /opt/scalaris-dx/dist-native
 
 # Install app dependencies
-COPY package.json /opt/block-dx/
+COPY package.json /opt/scalaris-dx/
 RUN npm install --no-audit
 
 # Bundle app source
-COPY . /opt/block-dx/
+COPY . /opt/scalaris-dx/
 
 ARG GIT_BRANCH=""
-RUN if [ ! -z "$GIT_BRANCH" ]; then echo GIT_BRANCH=$GIT_BRANCH > /opt/block-dx/electron-builder.env; fi
+RUN if [ ! -z "$GIT_BRANCH" ]; then echo GIT_BRANCH=$GIT_BRANCH > /opt/scalaris-dx/electron-builder.env; fi
 
 ENTRYPOINT ["npm"]
 CMD ["run", "build-native-win"]

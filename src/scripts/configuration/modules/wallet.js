@@ -60,7 +60,7 @@ class Wallet {
 
   generateCredentials() {
     const { name } = this;
-    const username = 'BlockDX' + name.replace(/\s/g, '');
+    const username = 'ScalarisDX' + name.replace(/\s/g, '');
     const password = uuid.v4();
     return { username, password };
   }

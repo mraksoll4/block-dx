@@ -20,14 +20,14 @@ $(document).ready(() => {
   switch(windowType) {
     case 'updateAvailable':
       windowHeader = Localize.text('Update Available!', 'updateAvailableWindow');
-      windowText = Localize.text('Block DX version {version} is available! Would you like to download it now?', 'updateAvailableWindow', {version});
+      windowText = Localize.text('Scalaris DX version {version} is available! Would you like to download it now?', 'updateAvailableWindow', {version});
       confirmButtonText = Localize.text('Download Update', 'updateAvailableWindow');
       cancelButtonText = Localize.text('Not Now', 'updateAvailableWindow');
       break;
     case 'updateDownloaded':
       $('#js-notAskAgain').css('display', 'none');
-      windowHeader = Localize.text('Block DX {version} Is Ready!', 'updateAvailableWindow', {version});
-      windowText = Localize.text('Block DX {version} is almost ready to use! To complete the update, a restart is required.', 'updateAvailableWindow', {version});
+      windowHeader = Localize.text('Scalaris DX {version} Is Ready!', 'updateAvailableWindow', {version});
+      windowText = Localize.text('Scalaris DX {version} is almost ready to use! To complete the update, a restart is required.', 'updateAvailableWindow', {version});
       confirmButtonText = Localize.text('Restart Now', 'updateAvailableWindow');
       cancelButtonText = Localize.text('Cancel', 'updateAvaiableWindow');
   }

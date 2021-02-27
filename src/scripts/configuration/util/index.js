@@ -298,7 +298,7 @@ const putToXBridgeConf = (wallets, blockDir) => {
 };
 
 /**
- * Adds rpcworkqueue= configuration option to the blocknet.conf. If the current
+ * Adds rpcworkqueue= configuration option to the scalaris.conf. If the current
  * value is under the target it is replaced with the specified minimum value.
  * If the target is over the minimum, the value remains unchanged. If the value
  * is missing, the minimum is used.
@@ -307,7 +307,7 @@ const putToXBridgeConf = (wallets, blockDir) => {
  * @param rpcXBridgeTimeout {number} Default 15
  */
 const putBlockConf = (blockDir, rpcWorkQueueMinimum=128, rpcXBridgeTimeout=15) => {
-  const blockConf = path.join(blockDir, 'blocknet.conf');
+  const blockConf = path.join(blockDir, 'scalaris.conf');
   let data = fs.readFileSync(blockConf, 'utf8');
   let split = data
     .replace(/\r/g, '')

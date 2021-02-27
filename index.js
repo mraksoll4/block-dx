@@ -13,7 +13,7 @@ const _ = require('lodash');
 const math = require('mathjs');
 const MarkdownIt = require('markdown-it');
 const { Localize } = require('./src-back/localize');
-const { blocknetDir4, blocknetDir3, BLOCKNET_CONF_NAME4, BLOCKNET_CONF_NAME3, ipcMainListeners, pricingSources } = require('./src-back/constants');
+const { scalarisDir4, scalarisDir3, SCALARIS_CONF_NAME4, SCALARIS_CONF_NAME3, ipcMainListeners, pricingSources } = require('./src-back/constants');
 const { checkAndCopyV3Configs } = require('./src-back/config-updater');
 const { MainSwitch } = require('./src-back/main-switch');
 const { openUnverifiedAssetWindow } = require('./src-back/windows/unverified-asset-window');
@@ -22,12 +22,12 @@ const { logger } = require('./src-back/logger');
 const { RecursiveInterval } = require('./src-back/recursive-interval');
 
 const versionDirectories = [
-  blocknetDir4,
-  blocknetDir3
+  scalarisDir4,
+  scalarisDir3
 ];
-const blocknetConfNames = [
-  BLOCKNET_CONF_NAME4,
-  BLOCKNET_CONF_NAME3
+const scalarisConfNames = [
+  SCALARIS_CONF_NAME4,
+  SCALARIS_CONF_NAME3
 ];
 
 const getHomePath = () => app.getPath('home');
@@ -74,7 +74,7 @@ ipcMain.on('getAppVersion', e => {
 let appWindow, serverLocation, sn, keyPair, storage, user, password, port, info, pricingSource, pricingUnit, apiKeys,
   pricingFrequency, enablePricing, sendPricingMultipliers, clearPricingInterval, setPricingInterval,
   sendMarketPricingEnabled, metaPath, availableUpdate, tradeHistory, myOrders, showWallet, tosWindow, releaseNotesWindow,
-  latestBlocknetDir, latestConfName;
+  latestScalarisDir, latestConfName;
 let updateError = false;
 
 // Handle explicit quit
@@ -97,7 +97,7 @@ const getManifest = () => {
   const blockIdx = manifest.findIndex(t => t.ticker === 'BLOCK');
   const blockDirectories = versionDirectories[0];
   manifest[blockIdx] = Object.assign({}, manifest[blockIdx], {
-    conf_name: blocknetConfNames[0],
+    conf_name: scalarisConfNames[0],
     dir_name_linux: blockDirectories.linux,
     dir_name_mac: blockDirectories.darwin,
     dir_name_win: blockDirectories.win32
@@ -461,18 +461,18 @@ const openConfigurationWindow = (options = {}) => {
 
   const { isFirstRun = false, error } = options;
 
-  // const errorMessage = error ? 'There was a problem connecting to the Blocknet RPC server. What would you like to do?' : '';
+  // const errorMessage = error ? 'There was a problem connecting to the Scalaris RPC server. What would you like to do?' : '';
   let errorTitle, errorMessage;
   if(error) {
     handleError(error);
     switch(error.status) {
       case 401:
         errorTitle = Localize.text('Authorization Problem', 'configurationWindow');
-        errorMessage = Localize.text('There was an authorization problem. Please check your Blocknet RPC username and/or password.', 'configurationWindow');
+        errorMessage = Localize.text('There was an authorization problem. Please check your Scalaris RPC username and/or password.', 'configurationWindow');
         break;
       default:
         errorTitle = Localize.text('Connection Error', 'configurationWindow');
-        errorMessage = Localize.text('There was a problem connecting to the Blocknet wallet. Make sure the wallet has been configured, restarted, and is open and unlocked.', 'configurationWindow');
+        errorMessage = Localize.text('There was a problem connecting to the Scalaris wallet. Make sure the wallet has been configured, restarted, and is open and unlocked.', 'configurationWindow');
     }
     logger.info(errorMessage);
   } else {
@@ -572,7 +572,7 @@ const openConfigurationWindow = (options = {}) => {
       user: dxUser,
       password: dxPassword,
       port: dxPort,
-      blocknetIP: dxIP
+      scalarisIP: dxIP
     }, true);
     e.returnValue = true;
   });
@@ -662,7 +662,7 @@ const openSettingsWindow = (options = {}) => {
         errorMessage = Localize.text('There was an authorization problem. Please correct your username and/or password.', 'settingsWindow');
         break;
       default:
-        errorMessage = Localize.text('There was a problem connecting to the Blocknet RPC server. Please check the RPC port.', 'settingsWindow');
+        errorMessage = Localize.text('There was a problem connecting to the Scalaris RPC server. Please check the RPC port.', 'settingsWindow');
     }
     logger.info(errorMessage);
   }
@@ -670,8 +670,8 @@ const openSettingsWindow = (options = {}) => {
   ipcMain.on('getPort', e => {
     e.returnValue = storage.getItem('port') || '';
   });
-  ipcMain.on('getBlocknetIP', e => {
-    e.returnValue = storage.getItem('blocknetIP') || '';
+  ipcMain.on('getScalarisIP', e => {
+    e.returnValue = storage.getItem('scalarisIP') || '';
   });
   ipcMain.on('getUser', e => {
     e.returnValue = storage.getItem('user') || '';
@@ -774,8 +774,8 @@ ipcMain.on('getPassword', e => {
 ipcMain.on('getPort', e => {
   e.returnValue = storage.getItem('port') || '';
 });
-ipcMain.on('getBlocknetIP', e => {
-  e.returnValue = storage.getItem('blocknetIP') || '';
+ipcMain.on('getScalarisIP', e => {
+  e.returnValue = storage.getItem('scalarisIP') || '';
 });
 
 const getDefaultCCDirectory = () => {
@@ -1872,7 +1872,7 @@ ipcMain.on(ipcMainListeners.OPEN_REFUND_NOTIFICATION, async function(e, { title,
     user = storage.getItem('user');
     password = storage.getItem('password');
     port = storage.getItem('port');
-    let ip = storage.getItem('blocknetIP');
+    let ip = storage.getItem('scalarisIP');
 
     let locale = storage.getItem('locale');
     if(!locale) {
@@ -1938,7 +1938,7 @@ ipcMain.on(ipcMainListeners.OPEN_REFUND_NOTIFICATION, async function(e, { title,
 
     if(!ip) {
       ip = '127.0.0.1';
-      storage.setItem('blocknetIP', ip);
+      storage.setItem('scalarisIP', ip);
     }
 
     if (!storage.getItem('confUpdaterDisabled')) {
@@ -2062,13 +2062,13 @@ function isTokenPairValid(keyPair) {
     && !_.isEmpty(keyPair[0]) && !_.isEmpty(keyPair[1]);
 }
 
-// check for version number. Minimum supported blocknet client version
+// check for version number. Minimum supported scalaris client version
 function versionCheck(version) {
   if (version < 4030100) {
     const requiredVersion = '4.3.1';
     return {
       name: Localize.text('Unsupported Version', 'universal'),
-      message: Localize.text('Block DX requires Blocknet wallet version {requiredVersion} or greater.', 'universal', {requiredVersion})
+      message: Localize.text('Scalaris DX requires Scalaris wallet version {requiredVersion} or greater.', 'universal', {requiredVersion})
     };
   }
   return null;

@@ -14,7 +14,7 @@ const renderListings = () => {
 //     exchange pairs cant be shut down
 //     link to form and repo
 //     list of whats already compatible
-//       divide by blocknet wallet release
+//       divide by scalaris wallet release
 
   return html;
 };

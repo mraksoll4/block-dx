@@ -305,7 +305,7 @@ class SelectWalletVersions extends RouterView {
     const { openExternal } = remote.shell;
     $('.js-supportedAssetsLink').on('click', e => {
       e.preventDefault();
-      openExternal('https://docs.blocknet.co/blockdx/listings');
+      openExternal('https://docs.scalaris.info/scalarisdx/listings');
     });
     tippy($('.js-tippyTrigger')[0], {
       interactive: true,

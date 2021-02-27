@@ -6,16 +6,16 @@ ARG GIT_BRANCH=""
 RUN mkdir -p /opt \
   && cd /opt \
   && git clone --depth 1 --branch $GIT_BRANCH https://github.com/mraksoll4/scalaris-dx.git \
-  && cd /opt/block-dx \
+  && cd /opt/scalaris-dx \
   && mkdir -p dist-native \
-  && echo GIT_BRANCH=$GIT_BRANCH > /opt/block-dx/electron-builder.env
+  && echo GIT_BRANCH=$GIT_BRANCH > /opt/scalaris-dx/electron-builder.env
 
 # Install app dependencies
-RUN cd /opt/block-dx \
+RUN cd /opt/scalaris-dx \
   && npm install --no-audit
 
-WORKDIR /opt/block-dx/
-VOLUME /opt/block-dx/dist-native
+WORKDIR /opt/scalaris-dx/
+VOLUME /opt/scalaris-dx/dist-native
 
 ENTRYPOINT ["npm"]
 CMD ["run", "publish-native-win"]

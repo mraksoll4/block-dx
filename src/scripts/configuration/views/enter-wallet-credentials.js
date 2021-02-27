@@ -143,7 +143,7 @@ class EnterWalletCredentials extends RouterView {
       if(addingWallets || updatingWallets) {
         router.goTo(route.FINISH);
       } else {
-        router.goTo(route.ENTER_BLOCKNET_CREDENTIALS);
+        router.goTo(route.ENTER_SCALARIS_CREDENTIALS);
       }
     });
     $('.js-usernameInput').on('change', e => {

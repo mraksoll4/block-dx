@@ -356,15 +356,15 @@
       "note": ""
     }
   },
-  "Block DX uses \"Exact\" orders.": {
+  "Scalaris DX uses \"Exact\" orders.": {
     "mainview": {
-      "val": "Block DX uses \"Exact\" orders.",
+      "val": "Scalaris DX uses \"Exact\" orders.",
       "note": ""
     }
   },
-  "At the moment Block DX only supports \"Exact\" orders, meaning that an order must be taken for the full amount. If you are a maker, you may want to place multiple smaller orders instead of one large order. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.": {
+  "At the moment Scalaris DX only supports \"Exact\" orders, meaning that an order must be taken for the full amount. If you are a maker, you may want to place multiple smaller orders instead of one large order. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.": {
     "mainview": {
-      "val": "At the moment Block DX only supports \"Exact\" orders, meaning that an order must be taken for the full amount. If you are a maker, you may want to place multiple smaller orders instead of one large order. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.",
+      "val": "At the moment Scalaris DX only supports \"Exact\" orders, meaning that an order must be taken for the full amount. If you are a maker, you may want to place multiple smaller orders instead of one large order. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.",
       "note": ""
     }
   },
@@ -380,9 +380,9 @@
       "note": ""
     }
   },
-  "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Blocknet wallet since it's used to facilitate even non-BLOCK orders.": {
+  "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Scalaris wallet since it's used to facilitate even non-BLOCK orders.": {
     "mainview": {
-      "val": "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Blocknet wallet since it's used to facilitate even non-BLOCK orders.",
+      "val": "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Scalaris wallet since it's used to facilitate even non-BLOCK orders.",
       "note": ""
     }
   },
@@ -398,9 +398,9 @@
       "note": ""
     }
   },
-  "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Blocknet wallet since it's used to facilitate the orders.": {
+  "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Scalaris wallet since it's used to facilitate the orders.": {
     "mainview": {
-      "val": "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Blocknet wallet since it's used to facilitate the orders.",
+      "val": "Since trading is peer-to-peer, you must have the wallet of each traded asset installed, open, synced, unlocked, and online for the duration of the trade. This also applies to the Scalaris wallet since it's used to facilitate the orders.",
       "note": ""
     }
   },
@@ -720,9 +720,9 @@
       "note": ""
     }
   },
-  "Blocknet Logo": {
+  "Scalaris Logo": {
     "navbar": {
-      "val": "Blocknet Logo",
+      "val": "Scalaris Logo",
       "note": ""
     }
   },
@@ -866,13 +866,13 @@
       "note": ""
     }
   },
-  "Powered by Blocknet": {
+  "Powered by Scalaris": {
     "navbar": {
-      "val": "Powered by Blocknet",
+      "val": "Powered by Scalaris",
       "note": ""
     },
     "informationWindow": {
-      "val": "Powered by Blocknet",
+      "val": "Powered by Scalaris",
       "note": ""
     }
   },
@@ -900,9 +900,9 @@
       "note": ""
     }
   },
-  "There are no Block DX updates available at this time.": {
+  "There are no Scalaris DX updates available at this time.": {
     "navbar": {
-      "val": "There are no Block DX updates available at this time.",
+      "val": "There are no Scalaris DX updates available at this time.",
       "note": ""
     }
   },
@@ -1440,9 +1440,9 @@
       "note": ""
     }
   },
-  "Before Block DX can be used, these last few steps must be completed:": {
+  "Before Scalaris DX can be used, these last few steps must be completed:": {
     "configurationWindowComplete": {
-      "val": "Before Block DX can be used, these last few steps must be completed:",
+      "val": "Before Scalaris DX can be used, these last few steps must be completed:",
       "note": ""
     }
   },
@@ -1452,21 +1452,21 @@
       "note": ""
     }
   },
-  "Open, sync, and fully unlock the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a>.": {
+  "Open, sync, and fully unlock the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a>.": {
     "configurationWindowComplete": {
-      "val": "Open, sync, and fully unlock the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a>.",
+      "val": "Open, sync, and fully unlock the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a>.",
       "note": ""
     }
   },
-  "Select RESTART to restart Block DX and begin trading.": {
+  "Select RESTART to restart Scalaris DX and begin trading.": {
     "configurationWindowComplete": {
-      "val": "Select RESTART to restart Block DX and begin trading.",
+      "val": "Select RESTART to restart Scalaris DX and begin trading.",
       "note": ""
     }
   },
-  "Before the updated assets can be traded on Block DX, <strong>the wallets for each of the updated assets must be restarted</strong> to load the new configurations. This includes the Blocknet wallet if it was updated.": {
+  "Before the updated assets can be traded on Scalaris DX, <strong>the wallets for each of the updated assets must be restarted</strong> to load the new configurations. This includes the Scalaris wallet if it was updated.": {
     "configurationWindowComplete": {
-      "val": "Before the updated assets can be traded on Block DX, <strong>the wallets for each of the updated assets must be restarted</strong> to load the new configurations. This includes the Blocknet wallet if it was updated.",
+      "val": "Before the updated assets can be traded on Scalaris DX, <strong>the wallets for each of the updated assets must be restarted</strong> to load the new configurations. This includes the Scalaris wallet if it was updated.",
       "note": ""
     }
   },
@@ -1476,9 +1476,9 @@
       "note": ""
     }
   },
-  "Open the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a>. If it is already open, you will need to restart it in order to activate the new configurations. Make sure that the wallet has been encrypted (Settings > Encrypt) and is fully unlocked (Settings > Unlock Wallet).": {
+  "Open the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a>. If it is already open, you will need to restart it in order to activate the new configurations. Make sure that the wallet has been encrypted (Settings > Encrypt) and is fully unlocked (Settings > Unlock Wallet).": {
     "configurationWindowComplete": {
-      "val": "Open the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a>. If it is already open, you will need to restart it in order to activate the new configurations. Make sure that the wallet has been encrypted (Settings > Encrypt) and is fully unlocked (Settings > Unlock Wallet).",
+      "val": "Open the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a>. If it is already open, you will need to restart it in order to activate the new configurations. Make sure that the wallet has been encrypted (Settings > Encrypt) and is fully unlocked (Settings > Unlock Wallet).",
       "note": ""
     }
   },
@@ -1518,15 +1518,15 @@
       "note": ""
     }
   },
-  "Update Blocknet RPC Settings": {
+  "Update Scalaris RPC Settings": {
     "configurationWindowMenu": {
-      "val": "Update Blocknet RPC Settings",
+      "val": "Update Scalaris RPC Settings",
       "note": ""
     }
   },
-  "Use this to update the RPC credentials, port, and IP for the Blocknet wallet. This will require the Blocknet wallet to be restarted, which will cancel any open and in-progress orders.": {
+  "Use this to update the RPC credentials, port, and IP for the Scalaris wallet. This will require the Scalaris wallet to be restarted, which will cancel any open and in-progress orders.": {
     "configurationWindowMenu": {
-      "val": "Use this to update the RPC credentials, port, and IP for the Blocknet wallet. This will require the Blocknet wallet to be restarted, which will cancel any open and in-progress orders.",
+      "val": "Use this to update the RPC credentials, port, and IP for the Scalaris wallet. This will require the Scalaris wallet to be restarted, which will cancel any open and in-progress orders.",
       "note": ""
     }
   },
@@ -1562,38 +1562,38 @@
       "note": ""
     }
   },
-  "In order to conduct peer-to-peer trades, Block DX requires access to the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a>. Please enter the RPC credentials found in <em>blocknet.conf</em>.": {
-    "configurationWindowBlocknetCredentials": {
-      "val": "In order to conduct peer-to-peer trades, Block DX requires access to the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a>. Please enter the RPC credentials found in <em>blocknet.conf</em>.",
+  "In order to conduct peer-to-peer trades, Scalaris DX requires access to the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a>. Please enter the RPC credentials found in <em>scalaris.conf</em>.": {
+    "configurationWindowScalarisCredentials": {
+      "val": "In order to conduct peer-to-peer trades, Scalaris DX requires access to the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a>. Please enter the RPC credentials found in <em>scalaris.conf</em>.",
       "note": ""
     }
   },
-  "Blocknet RPC Port": {
-    "configurationWindowBlocknetCredentials": {
-      "val": "Blocknet RPC Port",
+  "Scalaris RPC Port": {
+    "configurationWindowScalarisCredentials": {
+      "val": "Scalaris RPC Port",
       "note": ""
     }
   },
-  "Blocknet RPC User": {
-    "configurationWindowBlocknetCredentials": {
-      "val": "Blocknet RPC User",
+  "Scalaris RPC User": {
+    "configurationWindowScalarisCredentials": {
+      "val": "Scalaris RPC User",
       "note": ""
     }
   },
-  "Blocknet RPC Password": {
-    "configurationWindowBlocknetCredentials": {
-      "val": "Blocknet RPC Password",
+  "Scalaris RPC Password": {
+    "configurationWindowScalarisCredentials": {
+      "val": "Scalaris RPC Password",
       "note": ""
     }
   },
-  "Blocknet IP": {
-    "configurationWindowBlocknetCredentials": {
-      "val": "Blocknet IP",
+  "Scalaris IP": {
+    "configurationWindowScalarisCredentials": {
+      "val": "Scalaris IP",
       "note": ""
     }
   },
   "Missing Credentials": {
-    "configurationWindowBlocknetCredentials": {
+    "configurationWindowScalarisCredentials": {
       "val": "Missing Credentials",
       "note": ""
     },
@@ -1603,13 +1603,13 @@
     }
   },
   "You must enter credentials for {name} in order to continue.": {
-    "configurationWindowBlocknetCredentials": {
+    "configurationWindowScalarisCredentials": {
       "val": "You must enter credentials for {name} in order to continue.",
       "note": ""
     }
   },
   "OK": {
-    "configurationWindowBlocknetCredentials": {
+    "configurationWindowScalarisCredentials": {
       "val": "OK",
       "note": ""
     },
@@ -1726,9 +1726,9 @@
       "note": ""
     }
   },
-  "Staking will be disabled on all configured wallets. Staking is not recommended for any wallet connected to Block DX, as it can interfere with your ability to trade.": {
+  "Staking will be disabled on all configured wallets. Staking is not recommended for any wallet connected to Scalaris DX, as it can interfere with your ability to trade.": {
     "configurationWindowFinish": {
-      "val": "Staking will be disabled on all configured wallets. Staking is not recommended for any wallet connected to Block DX, as it can interfere with your ability to trade.",
+      "val": "Staking will be disabled on all configured wallets. Staking is not recommended for any wallet connected to Scalaris DX, as it can interfere with your ability to trade.",
       "note": ""
     }
   },
@@ -1738,15 +1738,15 @@
       "note": ""
     }
   },
-  "Block DX is the fastest, most secure, most reliable, and most decentralized exchange, allowing for peer-to-peer trading directly from your wallet.": {
+  "Scalaris DX is the fastest, most secure, most reliable, and most decentralized exchange, allowing for peer-to-peer trading directly from your wallet.": {
     "configurationWindowSetupType": {
-      "val": "Block DX is the fastest, most secure, most reliable, and most decentralized exchange, allowing for peer-to-peer trading directly from your wallet.",
+      "val": "Scalaris DX is the fastest, most secure, most reliable, and most decentralized exchange, allowing for peer-to-peer trading directly from your wallet.",
       "note": ""
     }
   },
-  "<strong>Prerequisites</strong>: Block DX requires the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">latest Blocknet wallet</a> and the wallets of any assets you want to trade with. These must be downloaded and installed before continuing. See the full list of <a href=\"#\" class=\"text-link js-compatibleWalletsLink\">compatible assets and wallet versions</a>.": {
+  "<strong>Prerequisites</strong>: Scalaris DX requires the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">latest Scalaris wallet</a> and the wallets of any assets you want to trade with. These must be downloaded and installed before continuing. See the full list of <a href=\"#\" class=\"text-link js-compatibleWalletsLink\">compatible assets and wallet versions</a>.": {
     "configurationWindowSetupType": {
-      "val": "<strong>Prerequisites</strong>: Block DX requires the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">latest Blocknet wallet</a> and the wallets of any assets you want to trade with. These must be downloaded and installed before continuing. See the full list of <a href=\"#\" class=\"text-link js-compatibleWalletsLink\">compatible assets and wallet versions</a>.",
+      "val": "<strong>Prerequisites</strong>: Scalaris DX requires the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">latest Scalaris wallet</a> and the wallets of any assets you want to trade with. These must be downloaded and installed before continuing. See the full list of <a href=\"#\" class=\"text-link js-compatibleWalletsLink\">compatible assets and wallet versions</a>.",
       "note": ""
     }
   },
@@ -1780,9 +1780,9 @@
       "note": ""
     }
   },
-  "An installation of the Blocknet wallet was not found, but is required to use Block DX. Please install the Blocknet wallet before continuing.": {
+  "An installation of the Scalaris wallet was not found, but is required to use Scalaris DX. Please install the Scalaris wallet before continuing.": {
     "configurationWindowSetupType": {
-      "val": "An installation of the Blocknet wallet was not found, but is required to use Block DX. Please install the Blocknet wallet before continuing.",
+      "val": "An installation of the Scalaris wallet was not found, but is required to use Scalaris DX. Please install the Scalaris wallet before continuing.",
       "note": ""
     }
   },
@@ -1894,9 +1894,9 @@
       "note": ""
     }
   },
-  "In order to conduct peer-to-peer trades, Block DX requires the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a> and the wallets of any assets you want to trade with. Select the wallets that are installed to begin setup.": {
+  "In order to conduct peer-to-peer trades, Scalaris DX requires the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a> and the wallets of any assets you want to trade with. Select the wallets that are installed to begin setup.": {
     "configurationWindowWallets": {
-      "val": "In order to conduct peer-to-peer trades, Block DX requires the <a href=\"#\" class=\"text-link js-blocknetWalletLink\">Blocknet wallet</a> and the wallets of any assets you want to trade with. Select the wallets that are installed to begin setup.",
+      "val": "In order to conduct peer-to-peer trades, Scalaris DX requires the <a href=\"#\" class=\"text-link js-scalarisWalletLink\">Scalaris wallet</a> and the wallets of any assets you want to trade with. Select the wallets that are installed to begin setup.",
       "note": ""
     }
   },
@@ -1906,9 +1906,9 @@
       "note": ""
     }
   },
-  " Skip and setup Block DX manually (not recommended": {
+  " Skip and setup Scalaris DX manually (not recommended": {
     "configurationWindowWallets": {
-      "val": " Skip and setup Block DX manually (not recommended",
+      "val": " Skip and setup Scalaris DX manually (not recommended",
       "note": ""
     }
   },
@@ -1948,9 +1948,9 @@
       "note": ""
     }
   },
-  "In order to change the language to {selected}, Block DX must restart. Do you want to continue?": {
+  "In order to change the language to {selected}, Scalaris DX must restart. Do you want to continue?": {
     "generalSettingsWindow": {
-      "val": "In order to change the language to {selected}, Block DX must restart. Do you want to continue?",
+      "val": "In order to change the language to {selected}, Scalaris DX must restart. Do you want to continue?",
       "note": ""
     }
   },
@@ -1960,9 +1960,9 @@
       "note": ""
     }
   },
-  "The \"Wallet\" balance is the <em>total</em> balance of your Blocknet wallet. This is useful when using a separate Blocknet wallet for trading and want to see the balance of your main Blocknet wallet, which is where fees are paid from.": {
+  "The \"Wallet\" balance is the <em>total</em> balance of your Scalaris wallet. This is useful when using a separate Scalaris wallet for trading and want to see the balance of your main Scalaris wallet, which is where fees are paid from.": {
     "generalSettingsWindow": {
-      "val": "The \"Wallet\" balance is the <em>total</em> balance of your Blocknet wallet. This is useful when using a separate Blocknet wallet for trading and want to see the balance of your main Blocknet wallet, which is where fees are paid from.",
+      "val": "The \"Wallet\" balance is the <em>total</em> balance of your Scalaris wallet. This is useful when using a separate Scalaris wallet for trading and want to see the balance of your main Scalaris wallet, which is where fees are paid from.",
       "note": ""
     }
   },
@@ -1972,9 +1972,9 @@
       "note": ""
     }
   },
-  "This will change the language of the Block DX application. Please select one of the available locales.": {
+  "This will change the language of the Scalaris DX application. Please select one of the available locales.": {
     "generalSettingsWindow": {
-      "val": "This will change the language of the Block DX application. Please select one of the available locales.",
+      "val": "This will change the language of the Scalaris DX application. Please select one of the available locales.",
       "note": ""
     }
   },
@@ -1996,9 +1996,9 @@
       "note": ""
     }
   },
-  "Note: This feature requires Blocknet version 3.14.1 or higher.": {
+  "Note: This feature requires Scalaris version 3.14.1 or higher.": {
     "generalSettingsWindow": {
-      "val": "Note: This feature requires Blocknet version 3.14.1 or higher.",
+      "val": "Note: This feature requires Scalaris version 3.14.1 or higher.",
       "note": ""
     }
   },
@@ -2050,195 +2050,195 @@
       "note": ""
     }
   },
-  "Blocknet Protocol": {
+  "Scalaris Protocol": {
     "informationWindow": {
-      "val": "Blocknet Protocol",
+      "val": "Scalaris Protocol",
       "note": ""
     }
   },
-  "Block DX is powered by the Blocknet Protocol": {
-    "informationWindowBlocknet": {
-      "val": "Block DX is powered by the Blocknet Protocol",
+  "Scalaris DX is powered by the Scalaris Protocol": {
+    "informationWindowScalaris": {
+      "val": "Scalaris DX is powered by the Scalaris Protocol",
       "note": ""
     }
   },
-  "In addition to the information below, you can learn more about Blocknet <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/\">here</a>.": {
-    "informationWindowBlocknet": {
-      "val": "In addition to the information below, you can learn more about Blocknet <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/\">here</a>.",
+  "In addition to the information below, you can learn more about Scalaris <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/\">here</a>.": {
+    "informationWindowScalaris": {
+      "val": "In addition to the information below, you can learn more about Scalaris <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/\">here</a>.",
       "note": ""
     }
   },
-  "What is Blocknet?": {
-    "informationWindowBlocknet": {
-      "val": "What is Blocknet?",
+  "What is Scalaris?": {
+    "informationWindowScalaris": {
+      "val": "What is Scalaris?",
       "note": ""
     }
   },
-  "Blocknet is a 2nd layer blockchain interoperability protocol that enables communication, interaction, and exchange between different blockchains. This allows for the development of multi-chain applications and blockchain microservices, creating exponentially more capabilities and possibilities for the blockchain ecosystem. Blocknet is a self-funded and self-governed open source project with contributors around the world building an open and collaborative ecosystem.": {
-    "informationWindowBlocknet": {
-      "val": "Blocknet is a 2nd layer blockchain interoperability protocol that enables communication, interaction, and exchange between different blockchains. This allows for the development of multi-chain applications and blockchain microservices, creating exponentially more capabilities and possibilities for the blockchain ecosystem. Blocknet is a self-funded and self-governed open source project with contributors around the world building an open and collaborative ecosystem.",
+  "Scalaris is a 2nd layer blockchain interoperability protocol that enables communication, interaction, and exchange between different blockchains. This allows for the development of multi-chain applications and blockchain microservices, creating exponentially more capabilities and possibilities for the blockchain ecosystem. Scalaris is a self-funded and self-governed open source project with contributors around the world building an open and collaborative ecosystem.": {
+    "informationWindowScalaris": {
+      "val": "Scalaris is a 2nd layer blockchain interoperability protocol that enables communication, interaction, and exchange between different blockchains. This allows for the development of multi-chain applications and blockchain microservices, creating exponentially more capabilities and possibilities for the blockchain ecosystem. Scalaris is a self-funded and self-governed open source project with contributors around the world building an open and collaborative ecosystem.",
       "note": ""
     }
   },
   "Subscribe to the following email lists for the latest features, updates, and news!": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "Subscribe to the following email lists for the latest features, updates, and news!",
       "note": ""
     }
   },
   "General Newsletter": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "General Newsletter",
       "note": ""
     }
   },
   "Service Node Newsletter": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "Service Node Newsletter",
       "note": ""
     }
   },
   "Developer Newsletter": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "Developer Newsletter",
       "note": ""
     }
   },
   "Technical Overview": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "Technical Overview",
       "note": ""
     }
   },
-  "Blocknet is a Proof-of-Stake (PoS) blockchain with a utility token called <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/blockchain/introduction\">BLOCK</a>. Unlike other currency-focused blockchains, Blocknet is a service-based blockchain comprised of 3 main components:": {
-    "informationWindowBlocknet": {
-      "val": "Blocknet is a Proof-of-Stake (PoS) blockchain with a utility token called <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/blockchain/introduction\">BLOCK</a>. Unlike other currency-focused blockchains, Blocknet is a service-based blockchain comprised of 3 main components:",
+  "Scalaris is a Proof-of-Stake (PoS) blockchain with a utility token called <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/blockchain/introduction\">BLOCK</a>. Unlike other currency-focused blockchains, Scalaris is a service-based blockchain comprised of 3 main components:": {
+    "informationWindowScalaris": {
+      "val": "Scalaris is a Proof-of-Stake (PoS) blockchain with a utility token called <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/blockchain/introduction\">BLOCK</a>. Unlike other currency-focused blockchains, Scalaris is a service-based blockchain comprised of 3 main components:",
       "note": ""
     }
   },
-  "<strong>XRouter</strong> - Provides the Blocknet Protocol with a communication layer consisting of an inter-blockchain SPV backend that enables the verification of blockchain records without requiring users to download the full blockchain. XRouter allows applications to interface with blockchains on the TCP/IP networking layer, enabling a true Internet of Blockchains.": {
-    "informationWindowBlocknet": {
-      "val": "<strong>XRouter</strong> - Provides the Blocknet Protocol with a communication layer consisting of an inter-blockchain SPV backend that enables the verification of blockchain records without requiring users to download the full blockchain. XRouter allows applications to interface with blockchains on the TCP/IP networking layer, enabling a true Internet of Blockchains.",
+  "<strong>XRouter</strong> - Provides the Scalaris Protocol with a communication layer consisting of an inter-blockchain SPV backend that enables the verification of blockchain records without requiring users to download the full blockchain. XRouter allows applications to interface with blockchains on the TCP/IP networking layer, enabling a true Internet of Blockchains.": {
+    "informationWindowScalaris": {
+      "val": "<strong>XRouter</strong> - Provides the Scalaris Protocol with a communication layer consisting of an inter-blockchain SPV backend that enables the verification of blockchain records without requiring users to download the full blockchain. XRouter allows applications to interface with blockchains on the TCP/IP networking layer, enabling a true Internet of Blockchains.",
       "note": ""
     }
   },
-  "<strong>XBridge</strong> - Provides the ability to perform trustless atomic swap exchanges between any blockchain that is supported by the Blocknet Protocol via APIs. XBridge allows any application to perform decentralized exchange, opening the door to an ecosystem of decentralized trading services.": {
-    "informationWindowBlocknet": {
-      "val": "<strong>XBridge</strong> - Provides the ability to perform trustless atomic swap exchanges between any blockchain that is supported by the Blocknet Protocol via APIs. XBridge allows any application to perform decentralized exchange, opening the door to an ecosystem of decentralized trading services.",
+  "<strong>XBridge</strong> - Provides the ability to perform trustless atomic swap exchanges between any blockchain that is supported by the Scalaris Protocol via APIs. XBridge allows any application to perform decentralized exchange, opening the door to an ecosystem of decentralized trading services.": {
+    "informationWindowScalaris": {
+      "val": "<strong>XBridge</strong> - Provides the ability to perform trustless atomic swap exchanges between any blockchain that is supported by the Scalaris Protocol via APIs. XBridge allows any application to perform decentralized exchange, opening the door to an ecosystem of decentralized trading services.",
       "note": ""
     }
   },
-  "<strong>XCloud</strong> - Provides a decentralized microservice cloud network powered by XRouter. Developers will be able to put both blockchain and non-blockchain microservices on Blocknet’s “public cloud” decentralized network. XCloud allows applications to run entirely decentralized, opening the door to the possibility of monetizable, fully decentralized applications.": {
-    "informationWindowBlocknet": {
-      "val": "<strong>XCloud</strong> - Provides a decentralized microservice cloud network powered by XRouter. Developers will be able to put both blockchain and non-blockchain microservices on Blocknet’s “public cloud” decentralized network. XCloud allows applications to run entirely decentralized, opening the door to the possibility of monetizable, fully decentralized applications.",
+  "<strong>XCloud</strong> - Provides a decentralized microservice cloud network powered by XRouter. Developers will be able to put both blockchain and non-blockchain microservices on Scalaris’s “public cloud” decentralized network. XCloud allows applications to run entirely decentralized, opening the door to the possibility of monetizable, fully decentralized applications.": {
+    "informationWindowScalaris": {
+      "val": "<strong>XCloud</strong> - Provides a decentralized microservice cloud network powered by XRouter. Developers will be able to put both blockchain and non-blockchain microservices on Scalaris’s “public cloud” decentralized network. XCloud allows applications to run entirely decentralized, opening the door to the possibility of monetizable, fully decentralized applications.",
       "note": ""
     }
   },
-  "The Blocknet Protocol is designed to maximize interoperability between different blockchains through the use of these components. Just as the internet enabled computers to communicate, the Blocknet Protocol is critical for blockchains to realize full potential.": {
-    "informationWindowBlocknet": {
-      "val": "The Blocknet Protocol is designed to maximize interoperability between different blockchains through the use of these components. Just as the internet enabled computers to communicate, the Blocknet Protocol is critical for blockchains to realize full potential.",
+  "The Scalaris Protocol is designed to maximize interoperability between different blockchains through the use of these components. Just as the internet enabled computers to communicate, the Scalaris Protocol is critical for blockchains to realize full potential.": {
+    "informationWindowScalaris": {
+      "val": "The Scalaris Protocol is designed to maximize interoperability between different blockchains through the use of these components. Just as the internet enabled computers to communicate, the Scalaris Protocol is critical for blockchains to realize full potential.",
       "note": ""
     }
   },
   "Nodes": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "Nodes",
       "note": ""
     }
   },
   "The network is powered by 2 types of nodes:": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "The network is powered by 2 types of nodes:",
       "note": ""
     }
   },
   "<strong>Staking Nodes</strong> - Secures the network by staking BLOCK to verify the blockchain. This service earns 30% of block rewards.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Staking Nodes</strong> - Secures the network by staking BLOCK to verify the blockchain. This service earns 30% of block rewards.",
       "note": ""
     }
   },
   "<strong>Service Nodes</strong> - Hosts the full nodes of compatible blockchains, hosts microservices, audits interactions, and performs anti-spam and anti-DOS measures for the network. This service earns 70% of block rewards and 100% of fees generated from use of the network's services.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Service Nodes</strong> - Hosts the full nodes of compatible blockchains, hosts microservices, audits interactions, and performs anti-spam and anti-DOS measures for the network. This service earns 70% of block rewards and 100% of fees generated from use of the network's services.",
       "note": ""
     }
   },
   "The following are the requirements to operate each type of node:": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "The following are the requirements to operate each type of node:",
       "note": ""
     }
   },
   "<strong>Staking Nodes</strong> - A Staking Node can be operated with any amount of BLOCK, but staking more BLOCK yields more frequent rewards.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Staking Nodes</strong> - A Staking Node can be operated with any amount of BLOCK, but staking more BLOCK yields more frequent rewards.",
       "note": ""
     }
   },
   "<strong>Service Nodes</strong> - A Service Node requires 5000 BLOCK.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Service Nodes</strong> - A Service Node requires 5000 BLOCK.",
       "note": ""
     }
   },
   "Tokenomics": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "Tokenomics",
       "note": ""
     }
   },
-  "<a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/blockchain/introduction\">BLOCK</a> is the utility token that powers the Blocknet. Fees are paid in BLOCK when using the network and 100% of those fees are distributed to Service Nodes for supporting the network and infrastructure. Normal transaction fees on the network are also paid in BLOCK, but those fees are burned. If seeking to acquire BLOCK, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/project/exchanges\">there are various options available</a>.": {
-    "informationWindowBlocknet": {
-      "val": "<a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/blockchain/introduction\">BLOCK</a> is the utility token that powers the Blocknet. Fees are paid in BLOCK when using the network and 100% of those fees are distributed to Service Nodes for supporting the network and infrastructure. Normal transaction fees on the network are also paid in BLOCK, but those fees are burned. If seeking to acquire BLOCK, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/project/exchanges\">there are various options available</a>.",
+  "<a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/blockchain/introduction\">BLOCK</a> is the utility token that powers the Scalaris. Fees are paid in BLOCK when using the network and 100% of those fees are distributed to Service Nodes for supporting the network and infrastructure. Normal transaction fees on the network are also paid in BLOCK, but those fees are burned. If seeking to acquire BLOCK, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/project/exchanges\">there are various options available</a>.": {
+    "informationWindowScalaris": {
+      "val": "<a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/blockchain/introduction\">BLOCK</a> is the utility token that powers the Scalaris. Fees are paid in BLOCK when using the network and 100% of those fees are distributed to Service Nodes for supporting the network and infrastructure. Normal transaction fees on the network are also paid in BLOCK, but those fees are burned. If seeking to acquire BLOCK, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/project/exchanges\">there are various options available</a>.",
       "note": ""
     }
   },
-  "Blocknet involves multiple economic models with respect to the use of the BLOCK token:": {
-    "informationWindowBlocknet": {
-      "val": "Blocknet involves multiple economic models with respect to the use of the BLOCK token:",
+  "Scalaris involves multiple economic models with respect to the use of the BLOCK token:": {
+    "informationWindowScalaris": {
+      "val": "Scalaris involves multiple economic models with respect to the use of the BLOCK token:",
       "note": ""
     }
   },
-  "<strong>Block Rewards</strong> - Blocknet is Proof-of-Stake(PoS) with 1 BLOCK created every minute, of which 30% is awarded to Staking Nodes and 70% to Service Nodes.": {
-    "informationWindowBlocknet": {
-      "val": "<strong>Block Rewards</strong> - Blocknet is Proof-of-Stake(PoS) with 1 BLOCK created every minute, of which 30% is awarded to Staking Nodes and 70% to Service Nodes.",
+  "<strong>Block Rewards</strong> - Scalaris is Proof-of-Stake(PoS) with 1 BLOCK created every minute, of which 30% is awarded to Staking Nodes and 70% to Service Nodes.": {
+    "informationWindowScalaris": {
+      "val": "<strong>Block Rewards</strong> - Scalaris is Proof-of-Stake(PoS) with 1 BLOCK created every minute, of which 30% is awarded to Staking Nodes and 70% to Service Nodes.",
       "note": ""
     }
   },
   "<strong>Service Fees</strong> - Service Nodes receive 100% of BLOCK fees generated from the use of services on the network, including trades performed via XBridge, interfacing with blockchains via XRouter, and use of microservices via XCloud.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Service Fees</strong> - Service Nodes receive 100% of BLOCK fees generated from the use of services on the network, including trades performed via XBridge, interfacing with blockchains via XRouter, and use of microservices via XCloud.",
       "note": ""
     }
   },
   "<strong>Collateral</strong> - BLOCK is required for collateral to operate a Service Node, as well as to use certain services on the network.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Collateral</strong> - BLOCK is required for collateral to operate a Service Node, as well as to use certain services on the network.",
       "note": ""
     }
   },
   "<strong>Governance</strong> - Submitting proposals to the network requires a fee to be paid in BLOCK and proposals can only be voted on by Service Nodes.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Governance</strong> - Submitting proposals to the network requires a fee to be paid in BLOCK and proposals can only be voted on by Service Nodes.",
       "note": ""
     }
   },
   "<strong>Transaction Fees</strong> - Transferring funds on the network incurs a transaction fee paid in BLOCK.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "<strong>Transaction Fees</strong> - Transferring funds on the network incurs a transaction fee paid in BLOCK.",
       "note": ""
     }
   },
   "The utility of the BLOCK token increases the buy pressure on the market, while the reward potential of operating a node reduces sell pressure on the market.": {
-    "informationWindowBlocknet": {
+    "informationWindowScalaris": {
       "val": "The utility of the BLOCK token increases the buy pressure on the market, while the reward potential of operating a node reduces sell pressure on the market.",
       "note": ""
     }
   },
-  "Using Block DX is cheaper than using centralized exchanges, especially since there are no withdrawal fees. Below is Block DX’s fee structure. For the most up-to-date information on fees, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/blockdx/fees/\">click here</a>.": {
+  "Using Scalaris DX is cheaper than using centralized exchanges, especially since there are no withdrawal fees. Below is Scalaris DX’s fee structure. For the most up-to-date information on fees, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/scalarisdx/fees/\">click here</a>.": {
     "informationWindowFees": {
-      "val": "Using Block DX is cheaper than using centralized exchanges, especially since there are no withdrawal fees. Below is Block DX’s fee structure. For the most up-to-date information on fees, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.blocknet.co/blockdx/fees/\">click here</a>.",
+      "val": "Using Scalaris DX is cheaper than using centralized exchanges, especially since there are no withdrawal fees. Below is Scalaris DX’s fee structure. For the most up-to-date information on fees, <a href=\"#\" class=\"text-link js-externalLink\" data-link=\"https://docs.scalaris.info/scalarisdx/fees/\">click here</a>.",
       "note": ""
     }
   },
@@ -2248,9 +2248,9 @@
       "note": ""
     }
   },
-  "When creating an order on Block DX, there is no fee other than the network fee of the asset being sold. This is the same type of fee you would incur if sending this asset to another party.": {
+  "When creating an order on Scalaris DX, there is no fee other than the network fee of the asset being sold. This is the same type of fee you would incur if sending this asset to another party.": {
     "informationWindowFees": {
-      "val": "When creating an order on Block DX, there is no fee other than the network fee of the asset being sold. This is the same type of fee you would incur if sending this asset to another party.",
+      "val": "When creating an order on Scalaris DX, there is no fee other than the network fee of the asset being sold. This is the same type of fee you would incur if sending this asset to another party.",
       "note": ""
     }
   },
@@ -2260,9 +2260,9 @@
       "note": ""
     }
   },
-  "When accepting an order on Block DX, a static fee of 0.015 BLOCK is charged at the time the order is taken. This fee is charged even if a trade is canceled or fails and is meant to discourage malicious behavior on the network.": {
+  "When accepting an order on Scalaris DX, a static fee of 0.015 BLOCK is charged at the time the order is taken. This fee is charged even if a trade is canceled or fails and is meant to discourage malicious behavior on the network.": {
     "informationWindowFees": {
-      "val": "When accepting an order on Block DX, a static fee of 0.015 BLOCK is charged at the time the order is taken. This fee is charged even if a trade is canceled or fails and is meant to discourage malicious behavior on the network.",
+      "val": "When accepting an order on Scalaris DX, a static fee of 0.015 BLOCK is charged at the time the order is taken. This fee is charged even if a trade is canceled or fails and is meant to discourage malicious behavior on the network.",
       "note": ""
     }
   },
@@ -2278,9 +2278,9 @@
       "note": ""
     }
   },
-  "100% of trade fees are distributed to Blocknet Service Node operators for supporting the network.": {
+  "100% of trade fees are distributed to Scalaris Service Node operators for supporting the network.": {
     "informationWindowFees": {
-      "val": "100% of trade fees are distributed to Blocknet Service Node operators for supporting the network.",
+      "val": "100% of trade fees are distributed to Scalaris Service Node operators for supporting the network.",
       "note": ""
     }
   },
@@ -2290,9 +2290,9 @@
       "note": ""
     }
   },
-  "Block DX is the fastest, most secure, most reliable, and most decentralized DEX. There are some differences when using a decentralized exchange verses a centralized exchange. Aside from there being no accounts, KYC, withdrawal limits, or withdrawal fees, below is a list of things you should know.": {
+  "Scalaris DX is the fastest, most secure, most reliable, and most decentralized DEX. There are some differences when using a decentralized exchange verses a centralized exchange. Aside from there being no accounts, KYC, withdrawal limits, or withdrawal fees, below is a list of things you should know.": {
     "informationWindowIntroduction": {
-      "val": "Block DX is the fastest, most secure, most reliable, and most decentralized DEX. There are some differences when using a decentralized exchange verses a centralized exchange. Aside from there being no accounts, KYC, withdrawal limits, or withdrawal fees, below is a list of things you should know.",
+      "val": "Scalaris DX is the fastest, most secure, most reliable, and most decentralized DEX. There are some differences when using a decentralized exchange verses a centralized exchange. Aside from there being no accounts, KYC, withdrawal limits, or withdrawal fees, below is a list of things you should know.",
       "note": ""
     }
   },
@@ -2302,9 +2302,9 @@
       "note": ""
     }
   },
-  "Since trading is peer-to-peer, you must have the wallet of each asset being traded installed, synced, and configured. Configuration was done when starting Block DX the first time, but you can reconfigure to add new wallets for trading using the Add & Update Wallets menu link.": {
+  "Since trading is peer-to-peer, you must have the wallet of each asset being traded installed, synced, and configured. Configuration was done when starting Scalaris DX the first time, but you can reconfigure to add new wallets for trading using the Add & Update Wallets menu link.": {
     "informationWindowIntroduction": {
-      "val": "Since trading is peer-to-peer, you must have the wallet of each asset being traded installed, synced, and configured. Configuration was done when starting Block DX the first time, but you can reconfigure to add new wallets for trading using the Add & Update Wallets menu link.",
+      "val": "Since trading is peer-to-peer, you must have the wallet of each asset being traded installed, synced, and configured. Configuration was done when starting Scalaris DX the first time, but you can reconfigure to add new wallets for trading using the Add & Update Wallets menu link.",
       "note": ""
     }
   },
@@ -2320,9 +2320,9 @@
       "note": ""
     }
   },
-  "At the moment only <em>\"legacy\"</em> addresses are compatible with Block DX.  Here are examples of various Bitcoin addresses:": {
+  "At the moment only <em>\"legacy\"</em> addresses are compatible with Scalaris DX.  Here are examples of various Bitcoin addresses:": {
     "informationWindowIntroduction": {
-      "val": "At the moment only <em>\"legacy\"</em> addresses are compatible with Block DX.  Here are examples of various Bitcoin addresses:",
+      "val": "At the moment only <em>\"legacy\"</em> addresses are compatible with Scalaris DX.  Here are examples of various Bitcoin addresses:",
       "note": ""
     }
   },
@@ -2356,9 +2356,9 @@
       "note": ""
     }
   },
-  "At the moment Block DX does not support partial order fills. It uses what is called <em>\"Exact\"</em> orders, meaning that an order must be taken for the full amount. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.": {
+  "At the moment Scalaris DX does not support partial order fills. It uses what is called <em>\"Exact\"</em> orders, meaning that an order must be taken for the full amount. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.": {
     "informationWindowIntroduction": {
-      "val": "At the moment Block DX does not support partial order fills. It uses what is called <em>\"Exact\"</em> orders, meaning that an order must be taken for the full amount. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.",
+      "val": "At the moment Scalaris DX does not support partial order fills. It uses what is called <em>\"Exact\"</em> orders, meaning that an order must be taken for the full amount. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.",
       "note": ""
     }
   },
@@ -2368,9 +2368,9 @@
       "note": ""
     }
   },
-  "Since trading utilizes the Blocknet wallet and the wallet of the assets being traded, these wallets must remain open and unlocked when trading. If the Blocknet wallet is closed, all orders will be canceled. If the Blocknet wallet is locked, all orders will fail. If the wallet of an asset being traded is closed or locked, all orders for that asset will fail. It is important to keep all wallets online until trades are fully completed.": {
+  "Since trading utilizes the Scalaris wallet and the wallet of the assets being traded, these wallets must remain open and unlocked when trading. If the Scalaris wallet is closed, all orders will be canceled. If the Scalaris wallet is locked, all orders will fail. If the wallet of an asset being traded is closed or locked, all orders for that asset will fail. It is important to keep all wallets online until trades are fully completed.": {
     "informationWindowIntroduction": {
-      "val": "Since trading utilizes the Blocknet wallet and the wallet of the assets being traded, these wallets must remain open and unlocked when trading. If the Blocknet wallet is closed, all orders will be canceled. If the Blocknet wallet is locked, all orders will fail. If the wallet of an asset being traded is closed or locked, all orders for that asset will fail. It is important to keep all wallets online until trades are fully completed.",
+      "val": "Since trading utilizes the Scalaris wallet and the wallet of the assets being traded, these wallets must remain open and unlocked when trading. If the Scalaris wallet is closed, all orders will be canceled. If the Scalaris wallet is locked, all orders will fail. If the wallet of an asset being traded is closed or locked, all orders for that asset will fail. It is important to keep all wallets online until trades are fully completed.",
       "note": ""
     }
   },
@@ -2428,9 +2428,9 @@
       "note": ""
     }
   },
-  "Block DX version {version} is available! Would you like to download it now?": {
+  "Scalaris DX version {version} is available! Would you like to download it now?": {
     "updateAvailableWindow": {
-      "val": "Block DX version {version} is available! Would you like to download it now?",
+      "val": "Scalaris DX version {version} is available! Would you like to download it now?",
       "note": ""
     }
   },
@@ -2446,15 +2446,15 @@
       "note": ""
     }
   },
-  "Block DX {version} Is Ready!": {
+  "Scalaris DX {version} Is Ready!": {
     "updateAvailableWindow": {
-      "val": "Block DX {version} Is Ready!",
+      "val": "Scalaris DX {version} Is Ready!",
       "note": ""
     }
   },
-  "Block DX {version} is almost ready to use! To complete the update, a restart is required.": {
+  "Scalaris DX {version} is almost ready to use! To complete the update, a restart is required.": {
     "updateAvailableWindow": {
-      "val": "Block DX {version} is almost ready to use! To complete the update, a restart is required.",
+      "val": "Scalaris DX {version} is almost ready to use! To complete the update, a restart is required.",
       "note": ""
     }
   },

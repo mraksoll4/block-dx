@@ -28,23 +28,23 @@ Errors['dxLoadXBridgeConf'] = {};
 Errors['dxGetLockedUtxos'] = {};
 
 // Full error code list found here:
-// https://github.com/BlocknetDX/BlockDX/blob/master/src/xbridge/util/xbridgeerror.h
+// https://github.com/mraksoll4/scalaris/blob/master/src/xbridge/util/xbridgeerror.h
 
 // Messages: Errors['dxGetOrderHistory'][1025] = 'Message here';
 
 // dxMakeOrder
-Errors['dxMakeOrder'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxMakeOrder'][1018] = () => Localize.text('Unable to connect to wallet. Please make sure the Blocknet wallet and the wallets of the assets being traded are open, synced, and unlocked.', 'rpcError');
+Errors['dxMakeOrder'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxMakeOrder'][1018] = () => Localize.text('Unable to connect to wallet. Please make sure the Scalaris wallet and the wallets of the assets being traded are open, synced, and unlocked.', 'rpcError');
 Errors['dxMakeOrder'][1019] = () => Localize.text('Unable to create order due to insufficient funds. Please make sure there are enough *available* funds (UTXOS/inputs) of the asset being sold to cover the order amount. Funds (UTXOS/inputs) may be tied up/reserved by other orders.', 'rpcError');
 Errors['dxMakeOrder'][1020] = () => Localize.text('Unable to create order due to unsigned transaction. Please try again or use a different address.', 'rpcError');
 Errors['dxMakeOrder'][1026] = () => Localize.text('Unable to create order. Please make sure a valid address is being used and the wallets of the assets being traded are open, synced, and unlocked.', 'rpcError');
 Errors['dxMakeOrder'][1027] = () => Localize.text('Unable to create order due to invalid transaction signature.', 'rpcError');
 Errors['dxMakeOrder'][1030] = () => Localize.text('Unable to create order due to the trade amount being too small (dust value). Please increase the order size and try again.', 'rpcError');
-Errors['dxMakeOrder'][1032] = () => Localize.text('Unable to create order. Either the Blocknet wallet is still loading network data (takes a few minutes after syncing completes) or no nodes on the network are currently supporting this trade pair.', 'rpcError');
+Errors['dxMakeOrder'][1032] = () => Localize.text('Unable to create order. Either the Scalaris wallet is still loading network data (takes a few minutes after syncing completes) or no nodes on the network are currently supporting this trade pair.', 'rpcError');
 
 // dxTakeOrder
-Errors['dxTakeOrder'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxTakeOrder'][1018] = () => Localize.text('Unable to connect to wallet. Please make sure the Blocknet wallet and the wallets of the assets being traded are open, synced, and unlocked.', 'rpcError');
+Errors['dxTakeOrder'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxTakeOrder'][1018] = () => Localize.text('Unable to connect to wallet. Please make sure the Scalaris wallet and the wallets of the assets being traded are open, synced, and unlocked.', 'rpcError');
 Errors['dxTakeOrder'][1019] = () => Localize.text('Unable to take order due to insufficient funds. Please make sure there are enough *available* funds (UTXOS/inputs) of the asset being sold to cover the order amount. Funds (UTXOS/inputs) may be tied up/reserved by other orders.', 'rpcError');
 Errors['dxTakeOrder'][1020] = () => Localize.text('Unable to take order due to unsigned transaction. Please try again or use a different address.', 'rpcError');
 Errors['dxTakeOrder'][1021] = () => Localize.text('Unable to take order. Please make sure the order ID is valid.', 'rpcError');
@@ -53,58 +53,58 @@ Errors['dxTakeOrder'][1027] = () => Localize.text('Unable to take order due to i
 Errors['dxTakeOrder'][1031] = () => Localize.text('Unable to take order due to insufficient funds. Please make sure there are enough *available* BLOCK UTXOS/inputs to cover the fee amount.', 'rpcError');
 
 // dxCancelOrder
-Errors['dxCancelOrder'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxCancelOrder'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxCancelOrder'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxCancelOrder'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 Errors['dxCancelOrder'][1021] = () => Localize.text('Unable to cancel order. Please make sure the order ID is valid.', 'rpcError');
 Errors['dxCancelOrder'][1028] = () => Localize.text('Unable to cancel order due to invalid order state. Order may already be cancelled or in another terminal state.', 'rpcError');
 
 // dxGetOrder
-Errors['dxGetOrder'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetOrder'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrder'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrder'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 Errors['dxGetOrder'][1021] = () => Localize.text('Unable to find order. Please make sure the order ID is valid.', 'rpcError');
 
 // dxGetOrders
-Errors['dxGetOrders'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetOrders'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrders'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrders'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetMyOrders
-Errors['dxGetMyOrders'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetMyOrders'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetMyOrders'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetMyOrders'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetOrderBook
-Errors['dxGetOrderBook'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetOrderBook'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrderBook'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrderBook'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetOrderHistory
-Errors['dxGetOrderHistory'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetOrderHistory'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrderHistory'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrderHistory'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetOrderFills
-Errors['dxGetOrderFills'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetOrderFills'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrderFills'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetOrderFills'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetLocalTokens
-Errors['dxGetLocalTokens'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetLocalTokens'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetLocalTokens'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetLocalTokens'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetNetworkTokens
-Errors['dxGetNetworkTokens'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetNetworkTokens'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetNetworkTokens'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetNetworkTokens'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetTokenBalances
-Errors['dxGetTokenBalances'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxGetTokenBalances'][1018] = () => Localize.text('Unable to connect to wallet. Please make sure the Blocknet wallet and the wallets of the assets being traded are open, synced, and unlocked.', 'rpcError');
+Errors['dxGetTokenBalances'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetTokenBalances'][1018] = () => Localize.text('Unable to connect to wallet. Please make sure the Scalaris wallet and the wallets of the assets being traded are open, synced, and unlocked.', 'rpcError');
 
 // dxFlushCancelledOrders
-Errors['dxFlushCancelledOrders'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxFlushCancelledOrders'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxFlushCancelledOrders'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxFlushCancelledOrders'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxLoadXBridgeConf
-Errors['dxLoadXBridgeConf'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
-Errors['dxLoadXBridgeConf'][1018] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxLoadXBridgeConf'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxLoadXBridgeConf'][1018] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 
 // dxGetLockedUtxos
-Errors['dxGetLockedUtxos'][1002] = () => Localize.text('Unable to connect to the Blocknet wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
+Errors['dxGetLockedUtxos'][1002] = () => Localize.text('Unable to connect to the Scalaris wallet. Please make sure the wallet is open, synced, and unlocked.', 'rpcError');
 Errors['dxGetLockedUtxos'][1021] = () => Localize.text('Unable to find order. Please make sure the order ID is valid.', 'rpcError');
 
 
@@ -405,7 +405,7 @@ class ServiceNodeInterface {
       if (_.isUndefined(body))
         throw new Error();
     } catch(err) {
-      throw new Error(`Unable to connect to the Blocknet wallet.\n\nMake sure your Blocknet wallet is open, synced, and unlocked.`);
+      throw new Error(`Unable to connect to the Scalaris wallet.\n\nMake sure your Scalaris wallet is open, synced, and unlocked.`);
     }
     if(body.result.error) {
       const { code = 1025, name = '', error = '' } = body.result;

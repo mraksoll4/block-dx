@@ -1,18 +1,18 @@
-const blocknetDir4 = {
-  win32: 'Blocknet',
-  darwin: 'Blocknet',
-  linux: 'blocknet'
+const scalarisDir4 = {
+  win32: 'Scalaris',
+  darwin: 'Scalaris',
+  linux: 'scalaris'
 };
 
-const blocknetDir3 = {
-  win32: 'BlocknetDX',
-  darwin: 'BlocknetDX',
-  linux: 'blocknetdx'
+const scalarisDir3 = {
+  win32: 'ScalarisDX',
+  darwin: 'ScalarisDX',
+  linux: 'scalarisdx'
 };
 
 const X_BRIDGE_CONF_NAME = 'xbridge.conf';
-const BLOCKNET_CONF_NAME4 = 'blocknet.conf';
-const BLOCKNET_CONF_NAME3 = 'blocknetdx.conf';
+const SCALARIS_CONF_NAME4 = 'scalaris.conf';
+const SCALARIS_CONF_NAME3 = 'scalarisdx.conf';
 
 const ipcMainListeners = {
   GET_HIDE_REFUND_NOTIFICATION: 'GET_HIDE_REFUND_NOTIFICATION',
@@ -30,11 +30,11 @@ const pricingSources = {
 };
 
 module.exports = {
-  blocknetDir4,
-  blocknetDir3,
+  scalarisDir4,
+  scalarisDir3,
   X_BRIDGE_CONF_NAME,
-  BLOCKNET_CONF_NAME4,
-  BLOCKNET_CONF_NAME3,
+  SCALARIS_CONF_NAME4,
+  SCALARIS_CONF_NAME3,
   ipcMainListeners,
   pricingSources,
 };

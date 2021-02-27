@@ -16,7 +16,7 @@ const ExpertSelectWalletVersions = require('./views/expert-select-wallet-version
 const SelectWalletDirectories = require('./views/select-wallet-directories');
 const ExpertSelectSetupType = require('./views/expert-select-setup-type');
 const Finish = require('./views/finish');
-const EnterBlocknetCredentials = require('./views/enter-blocknet-credentials');
+const EnterScalarisCredentials = require('./views/enter-scalaris-credentials');
 const EnterWalletCredentials = require('./views/enter-wallet-credentials');
 const ConfigurationMenu = require('./views/configuration-menu');
 const SelectLitewalletConfigDirectory = require('./views/select-litewallet-config-directory');
@@ -104,7 +104,7 @@ $(document).ready(() => {
     router.registerRoute(route.SELECT_WALLET_DIRECTORIES, SelectWalletDirectories);
     router.registerRoute(route.EXPERT_SELECT_SETUP_TYPE, ExpertSelectSetupType);
     router.registerRoute(route.FINISH, Finish);
-    router.registerRoute(route.ENTER_BLOCKNET_CREDENTIALS, EnterBlocknetCredentials);
+    router.registerRoute(route.ENTER_SCALARIS_CREDENTIALS, EnterScalarisCredentials);
     router.registerRoute(route.ENTER_WALLET_CREDENTIALS, EnterWalletCredentials);
     router.registerRoute(route.CONFIGURATION_MENU, ConfigurationMenu);
     router.registerRoute(route.LITEWALLET_SELECT_CONFIG_DIRECTORY, SelectLitewalletConfigDirectory);

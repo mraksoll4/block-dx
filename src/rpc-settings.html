@@ -103,10 +103,10 @@
       text-align: right;
       justify-content: flex-end;
     }
-    a.blocknet-link {
+    a.scalaris-link {
       color: #006afe;
     }
-    a.blocknet-link:hover {
+    a.scalaris-link:hover {
       color: #66d0ff;
     }
 
@@ -115,28 +115,28 @@
 </head>
 <body>
 
-  <div style="width:100%; padding: 20px 0 20px 0; text-align:center;"><img style="max-width:300px;" src="assets/logo_full.svg" alt="Blocknet Logo"></div>
+  <div style="width:100%; padding: 20px 0 20px 0; text-align:center;"><img style="max-width:300px;" src="assets/logo_full.svg" alt="Scalaris Logo"></div>
   <h3>SETTINGS</h3>
   <form class="container">
-    <div class="label">In order to conduct peer-to-peer trades, Block DX requires access to the <a href="#" class="blocknet-link js-blocknetWalletLink">Blocknet wallet</a>. Please enter the RPC credentials found in <em>blocknet.conf</em>.</div>
+    <div class="label">In order to conduct peer-to-peer trades, Scalaris DX requires access to the <a href="#" class="scalaris-link js-scalarisWalletLink">Scalaris wallet</a>. Please enter the RPC credentials found in <em>scalaris.conf</em>.</div>
 
     <div class="input-group">
-      <label>Blocknet RPC Port</label>
+      <label>Scalaris RPC Port</label>
       <input type="text" id="js-port" pattern="\d+" required />
     </div>
 
     <div class="input-group">
-      <label>Blocknet RPC User</label>
+      <label>Scalaris RPC User</label>
       <input type="text" id="js-user" pattern="\w+" required />
     </div>
 
     <div class="input-group">
-      <label>Blocknet RPC Password</label>
+      <label>Scalaris RPC Password</label>
       <input type="password" id="js-password" />
     </div>
 
     <div class="input-group">
-      <label>Blocknet  IP</label>
+      <label>Scalaris  IP</label>
       <input type="text" pattern="^\d+\.\d+\.\d+\.\d+$" id="js-ip" />
     </div>
 
@@ -171,7 +171,7 @@
       const port = ipcRenderer.sendSync('getPort');
       const user = ipcRenderer.sendSync('getUser');
       const version = ipcRenderer.sendSync('getAppVersion');
-      const ip = ipcRenderer.sendSync('getBlocknetIP');
+      const ip = ipcRenderer.sendSync('getScalarisIP');
 
       console.log(port);
       console.log(user);
@@ -184,7 +184,7 @@
       $port.val(port);
       $user.val(user);
       $ip.val(ip);
-      $('#js-versionSpan').text(`BLOCK DX v${version}`);
+      $('#js-versionSpan').text(`SCALARIS DX v${version}`);
 
       if(!port) {
         $port[0].focus();
@@ -192,7 +192,7 @@
         $user[0].focus();
       }
 
-      $('.js-blocknetWalletLink').on('click', e => {
+      $('.js-scalarisWalletLink').on('click', e => {
         e.preventDefault();
         const { openExternal } = window.electron.remote.shell;
         openExternal('https://github.com/mraksoll4/scalaris/releases/latest');
@@ -209,7 +209,7 @@
           port: $port.val(),
           user: $user.val(),
           password: $password.val(),
-          blocknetIP: $ip.val()
+          scalarisIP: $ip.val()
         };
 
         console.log(dataToSave);

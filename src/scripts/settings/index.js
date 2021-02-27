@@ -516,7 +516,7 @@ $(document).ready(() => {
                 const selected = locales.find(([code]) => code === value);
                 const confirmed = await remote.dialog.showMessageBox({
                   type: 'warning',
-                  message: Localize.text('In order to change the language to {selected}, Block DX must restart. Do you want to continue?', 'generalSettingsWindow', {selected: selected[1]}),
+                  message: Localize.text('In order to change the language to {selected}, Scalaris DX must restart. Do you want to continue?', 'generalSettingsWindow', {selected: selected[1]}),
                   buttons: [
                     Localize.text('Cancel', 'universal'),
                     Localize.text('OK', 'universal')
@@ -551,7 +551,7 @@ $(document).ready(() => {
       const showAllOrdersFromXbridgeConf = ipcRenderer.sendSync('getShowAllOrdersFromXbridgeConf');
       if(
         showAllOrdersFromXbridgeConf !== null && // if a valid xbridge conf was found
-        showAllOrders !== showAllOrdersFromXbridgeConf // if the value in the conf is different from the current Block DX state
+        showAllOrders !== showAllOrdersFromXbridgeConf // if the value in the conf is different from the current Scalaris DX state
       ) {
         state.set('showAllOrders', showAllOrdersFromXbridgeConf);
         saveSettings();

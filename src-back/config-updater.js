@@ -1,15 +1,15 @@
 const path = require('path');
 const fs = require('fs-extra-promise');
 const electron = require('electron');
-const { blocknetDir3, blocknetDir4, BLOCKNET_CONF_NAME3, BLOCKNET_CONF_NAME4, X_BRIDGE_CONF_NAME } = require('./constants');
+const { scalarisDir3, scalarisDir4, SCALARIS_CONF_NAME3, SCALARIS_CONF_NAME4, X_BRIDGE_CONF_NAME } = require('./constants');
 
 const { platform } = process;
 
-const clearBlockdxData = async function(storage) {
+const clearScalarisdxData = async function(storage) {
   const storageKeysToClear = [
     'addresses',
     'port',
-    'blocknetIP',
+    'scalarisIP',
     'tokenPaths',
     'user',
     'password',
@@ -21,35 +21,35 @@ const clearBlockdxData = async function(storage) {
 };
 
 module.exports.checkAndCopyV3Configs = async function(basePath, app, Localize, storage) {
-  const v3DirPath = path.join(basePath, blocknetDir3[platform]);
+  const v3DirPath = path.join(basePath, scalarisDir3[platform]);
   const v3XbridgeConfPath = path.join(v3DirPath, X_BRIDGE_CONF_NAME);
-  const v3BlocknetConfPath = path.join(v3DirPath, BLOCKNET_CONF_NAME3);
-  const v4DirPath = path.join(basePath, blocknetDir4[platform]);
+  const v3ScalarisConfPath = path.join(v3DirPath, SCALARIS_CONF_NAME3);
+  const v4DirPath = path.join(basePath, scalarisDir4[platform]);
   const v4XbridgeConfPath = path.join(v4DirPath, X_BRIDGE_CONF_NAME);
-  const v4BlocknetConfPath = path.join(v4DirPath, BLOCKNET_CONF_NAME4);
+  const v4ScalarisConfPath = path.join(v4DirPath, SCALARIS_CONF_NAME4);
   const v3DirExists = await fs.existsAsync(v3DirPath);
   const v4DirExists = await fs.existsAsync(v4DirPath);
   if(v3DirExists && v4DirExists) {
     const v3XbridgeConfExists = await fs.existsAsync(v3XbridgeConfPath);
-    const v3BlocknetConfExists = await fs.existsAsync(v3BlocknetConfPath);
-    if(v3XbridgeConfExists && v3BlocknetConfExists) {
+    const v3ScalarisConfExists = await fs.existsAsync(v3ScalarisConfPath);
+    if(v3XbridgeConfExists && v3ScalarisConfExists) {
       await fs.copyAsync(v3XbridgeConfPath, v4XbridgeConfPath);
-      await fs.copyAsync(v3BlocknetConfPath, v4BlocknetConfPath);
+      await fs.copyAsync(v3ScalarisConfPath, v4ScalarisConfPath);
       storage.removeItem('addresses', true);
       storage.setItem('xbridgeConfPath', v4XbridgeConfPath, true);
       await electron.dialog.showMessageBox({
         type: 'info',
-        title: Localize.text('Blocknet Configs Updated', 'universal'),
-        message: Localize.text('The configuration files for your new Blocknet wallet have been updated. In order for Block DX to connect to the RPC server, you will need to restart your Blocknet wallet and then re-open Block DX.', 'universal'),
+        title: Localize.text('Scalaris Configs Updated', 'universal'),
+        message: Localize.text('The configuration files for your new Scalaris wallet have been updated. In order for Scalaris DX to connect to the RPC server, you will need to restart your Scalaris wallet and then re-open Scalaris DX.', 'universal'),
         buttons: [
           Localize.text('OK', 'universal')
         ]
       });
       app.quit();
     } else {
-      clearBlockdxData(storage);
+      clearScalarisdxData(storage);
     }
   } else {
-    clearBlockdxData(storage);
+    clearScalarisdxData(storage);
   }
 };

@@ -47,7 +47,7 @@ class Finish extends RouterView {
 
                 <p style="${styles.p}">${Localize.text('Upon selecting FINISH, the configurations set will be saved.','configurationWindowFinish')}</p>
 
-                <p style="${styles.p}"><strong>${Localize.text('Note', 'configurationWindowFinish')}:</strong> ${Localize.text('Staking will be disabled on all configured wallets. Staking is not recommended for any wallet connected to Block DX, as it can interfere with your ability to trade.','configurationWindowFinish')}</p>
+                <p style="${styles.p}"><strong>${Localize.text('Note', 'configurationWindowFinish')}:</strong> ${Localize.text('Staking will be disabled on all configured wallets. Staking is not recommended for any wallet connected to Scalaris DX, as it can interfere with your ability to trade.','configurationWindowFinish')}</p>
 
                 <div class="main-area" style="${styles.mainArea}"></div>
                 <div id="js-buttonContainer" class="button-container">
@@ -69,7 +69,7 @@ class Finish extends RouterView {
       e.preventDefault();
       const configurationType = state.get('configurationType');
       if(configurationType === configurationTypes.UPDATE_RPC_SETTINGS) {
-        router.goTo(route.ENTER_BLOCKNET_CREDENTIALS);
+        router.goTo(route.ENTER_SCALARIS_CREDENTIALS);
       } else {
         if(state.get('quickSetup')) {
           router.goTo(route.SELECT_WALLET_VERSIONS);

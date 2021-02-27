@@ -9,7 +9,7 @@ const renderListings = require('./modules/listings');
 const renderFAQ = require('./modules/faq');
 const renderTutorials = require('./modules/tutorials');
 const renderSupport = require('./modules/support');
-const renderBlocknet = require('./modules/blocknet');
+const renderScalaris = require('./modules/scalaris');
 const { Localize } = require('../../../src-back/localize');
 
 Localize.initialize(ipcRenderer.sendSync('getUserLocale'), ipcRenderer.sendSync('getLocaleData'));
@@ -47,7 +47,7 @@ state.set('sidebarItems', [
   // {sidebarText: 'FAQ', title: 'FAQ'},
   // {sidebarText: 'Tutorials', title: 'TUTORIALS'},
   // {sidebarText: 'Troubleshooting', title: 'TROUBLESHOOTING'},
-  {sidebarText: Localize.text('Powered by Blocknet', 'informationWindow'), title: Localize.text('Blocknet Protocol', 'informationWindow').toUpperCase()}
+  {sidebarText: Localize.text('Powered by Scalaris', 'informationWindow'), title: Localize.text('Scalaris Protocol', 'informationWindow').toUpperCase()}
 ]);
 
 
@@ -86,7 +86,7 @@ $(document).ready(() => {
       //   mainHTML = renderSupport();
       //   break;
       case 2:
-        mainHTML = renderBlocknet({ Localize });
+        mainHTML = renderScalaris({ Localize });
         break;
       default:
         mainHTML = '';

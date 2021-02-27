@@ -96,7 +96,7 @@ export class NavBarComponent implements OnInit {
           // alert('Update has been downloaded and will be installed once you restart the application.');
           break;
         default:
-          alert(this.Localize.text('There are no Block DX updates available at this time.', 'navbar'));
+          alert(this.Localize.text('There are no Scalaris DX updates available at this time.', 'navbar'));
       }
       this.toggleNav();
     }
@@ -112,26 +112,23 @@ export class NavBarComponent implements OnInit {
     e.preventDefault();
     const { openExternal } = window.electron.remote.shell;
     switch(name) {
-      case 'reddit':
-        openExternal('https://www.reddit.com/r/theblocknet/');
-        break;
       case 'twitter':
         openExternal('https://twitter.com/The_Blocknet/');
         break;
       case 'api':
-        openExternal('https://api.blocknet.co/#xbridge-api');
+        openExternal('https://api.scalaris.info/#xbridge-api');
         break;
       case 'exchanges':
-        openExternal('https://docs.blocknet.co/project/exchanges/');
+        openExternal('https://docs.scalaris.info/project/exchanges/');
         break;
       case 'faq':
-        openExternal('https://docs.blocknet.co/blockdx/faq/');
+        openExternal('https://docs.scalaris.info/scalarisdx/faq/');
         break;
       case 'fees':
-        openExternal('https://docs.blocknet.co/blockdx/fees/');
+        openExternal('https://docs.scalaris.info/scalarisdx/fees/');
         break;
       case 'resources':
-        openExternal('https://docs.blocknet.co/');
+        openExternal('https://docs.scalaris.info/');
         break;
       case 'community':
         openExternal('https://discord.gg/2e6s7H8');

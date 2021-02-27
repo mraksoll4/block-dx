@@ -112,14 +112,14 @@ class SelectWallets extends RouterView {
             ${sidebar(0)}
           </div>`}
           <div class="${configuringLitewallets ? 'col2-no-margin' : 'col2'}">
-            <p style="margin-top:0;padding-top:0;padding-left:10px;padding-right:10px;margin-bottom:10px;">${updatingWallets ? Localize.text('Select the wallet(s) that you would like to update.','configurationWindowWallets') : Localize.text('In order to conduct peer-to-peer trades, Block DX requires the <a href="#" class="text-link js-blocknetWalletLink">Blocknet wallet</a> and the wallets of any assets you want to trade with. Select the wallets that are installed to begin setup.','configurationWindowWallets')}</p>
+            <p style="margin-top:0;padding-top:0;padding-left:10px;padding-right:10px;margin-bottom:10px;">${updatingWallets ? Localize.text('Select the wallet(s) that you would like to update.','configurationWindowWallets') : Localize.text('In order to conduct peer-to-peer trades, Scalaris DX requires the <a href="#" class="text-link js-scalarisWalletLink">Scalaris wallet</a> and the wallets of any assets you want to trade with. Select the wallets that are installed to begin setup.','configurationWindowWallets')}</p>
             <p class="select-all-container"><a class="js-selectAll select-all-link" href="#"><i class="far ${allChecked ? 'fa-check-square' : 'fa-square'} check-icon" />${Localize.text(' Select All','configurationWindowWallets')}</a></p>
             <div id="js-mainConfigurationArea" class="main-area" style="position:relative;${skip ? 'opacity:.6;overflow-y:hidden;' : 'opacity:1;overflow-y:scroll;'}">
               ${listItems}
               <div id="js-overlay" style="display:${skip ? 'block' : 'none'};position:absolute;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:0;"></div>
             </div>
             ${configuringLitewallets ? '' : `<div style="display:${(updatingWallets || addingWallets) ? 'none' : 'block'};padding: 10px; cursor: pointer;padding-bottom:0;">
-              <div id="js-skip" class="main-area-item"><i class="far ${skip ? 'fa-check-square' : 'fa-square'} radio-icon"></i>${Localize.text(' Skip and setup Block DX manually (not recommended','configurationWindowWallets')})</div>
+              <div id="js-skip" class="main-area-item"><i class="far ${skip ? 'fa-check-square' : 'fa-square'} radio-icon"></i>${Localize.text(' Skip and setup Scalaris DX manually (not recommended','configurationWindowWallets')})</div>
             </div>`}
 
             <div id="js-buttonContainer" class="button-container">
@@ -341,7 +341,7 @@ class SelectWallets extends RouterView {
           ccUpdated = false;
         }
         if(!ccUpdated)
-          alert(Localize.text('Block DX cannot connect to XLite wallet. Please start or restart XLite to continue using Block DX.', 'configurationWindowWallets'));
+          alert(Localize.text('Scalaris DX cannot connect to XLite wallet. Please start or restart XLite to continue using Scalaris DX.', 'configurationWindowWallets'));
         ipcRenderer.send('loadXBridgeConf');
         setTimeout(() => {
           ipcRenderer.send('restart');
@@ -349,14 +349,14 @@ class SelectWallets extends RouterView {
       } else {
         const skip = state.get('skipSetup');
         if(skip) {
-          router.goTo(route.ENTER_BLOCKNET_CREDENTIALS);
+          router.goTo(route.ENTER_SCALARIS_CREDENTIALS);
         } else {
           router.goTo(route.EXPERT_SELECT_WALLET_VERSIONS);
         }
       }
     });
 
-    $('.js-blocknetWalletLink').on('click', e => {
+    $('.js-scalarisWalletLink').on('click', e => {
       e.preventDefault();
       remote.shell.openExternal('https://github.com/mraksoll4/scalaris/releases/latest');
     });

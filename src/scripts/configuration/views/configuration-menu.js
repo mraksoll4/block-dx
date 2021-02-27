@@ -45,8 +45,8 @@ class ConfigurationMenu extends RouterView {
         value: configurationTypes.FRESH_SETUP
       },
       {
-        title: Localize.text('Update Blocknet RPC Settings','configurationWindowMenu'),
-        text: Localize.text('Use this to update the RPC credentials, port, and IP for the Blocknet wallet. This will require the Blocknet wallet to be restarted, which will cancel any open and in-progress orders.','configurationWindowMenu'),
+        title: Localize.text('Update Scalaris RPC Settings','configurationWindowMenu'),
+        text: Localize.text('Use this to update the RPC credentials, port, and IP for the Scalaris wallet. This will require the Scalaris wallet to be restarted, which will cancel any open and in-progress orders.','configurationWindowMenu'),
         value: configurationTypes.UPDATE_RPC_SETTINGS
       },
       {
@@ -135,7 +135,7 @@ class ConfigurationMenu extends RouterView {
             }
             break;
           } case configurationTypes.UPDATE_RPC_SETTINGS:
-            router.goTo(route.ENTER_BLOCKNET_CREDENTIALS);
+            router.goTo(route.ENTER_SCALARIS_CREDENTIALS);
             break;
         }
       } catch(err) {

@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="navbar-bar" [class.menu-active]="pairSelectorActiveState">
     <a class="navbar-brand" [routerLink]="['/trading']">
-      <img src="assets/icon.svg" [alt]="Localize.text('Blocknet Logo', 'navbar')">
+      <img src="assets/icon.svg" [alt]="Localize.text('Scalaris Logo', 'navbar')">
     </a>
 
     <app-pair-selector (onActiveStatus)="pairSelectorActiveState = $event"></app-pair-selector>
@@ -41,7 +41,7 @@
       </ul>
       <ul>
         <li class="app-version"></li>
-        <li class="app-version">v{{appVersion}} | <Localize context="navbar" key="Powered by Blocknet"></Localize></li>
+        <li class="app-version">v{{appVersion}} | <Localize context="navbar" key="Powered by Scalaris"></Localize></li>
       </ul>
     </div>
     <a (click)="toggleNav()" class="navbar-toggler">

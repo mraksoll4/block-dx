@@ -32,21 +32,21 @@ class ConfigurationComplete extends RouterView {
               <div class="col2-no-margin">
                 ${addingWallets ?
                   `
-                    <p style="${styles.p}">${Localize.text('Before Block DX can be used, these last few steps must be completed:','configurationWindowComplete')}</p>
+                    <p style="${styles.p}">${Localize.text('Before Scalaris DX can be used, these last few steps must be completed:','configurationWindowComplete')}</p>
                     <p style="${styles.p}"><strong style="margin-right: 10px;">1)</strong> ${Localize.text('The wallets for each of the newly added assets must be restarted to load the new configurations. Make sure that the wallets have been encrypted (Settings > Encrypt), synced, and are fully unlocked (Settings > Unlock Wallet).','configurationWindowComplete')}</p>
-                    <p style="${styles.p}"><strong style="margin-right: 10px;">2)</strong> ${Localize.text('Open, sync, and fully unlock the <a href="#" class="text-link js-blocknetWalletLink">Blocknet wallet</a>.','configurationWindowComplete')}</p>
-                    <p style="${styles.p}"><strong style="margin-right: 10px;">3)</strong> ${Localize.text('Select RESTART to restart Block DX and begin trading.','configurationWindowComplete')}</p>
+                    <p style="${styles.p}"><strong style="margin-right: 10px;">2)</strong> ${Localize.text('Open, sync, and fully unlock the <a href="#" class="text-link js-scalarisWalletLink">Scalaris wallet</a>.','configurationWindowComplete')}</p>
+                    <p style="${styles.p}"><strong style="margin-right: 10px;">3)</strong> ${Localize.text('Select RESTART to restart Scalaris DX and begin trading.','configurationWindowComplete')}</p>
                   `
                 : updatingWallets ?
                   `
-                    <p style="${styles.p}">${Localize.text('Before the updated assets can be traded on Block DX, <strong>the wallets for each of the updated assets must be restarted</strong> to load the new configurations. This includes the Blocknet wallet if it was updated.','configurationWindowComplete')}</p>
+                    <p style="${styles.p}">${Localize.text('Before the updated assets can be traded on Scalaris DX, <strong>the wallets for each of the updated assets must be restarted</strong> to load the new configurations. This includes the Scalaris wallet if it was updated.','configurationWindowComplete')}</p>
                   `
                 :
                   `
-                    <p style="${styles.p}">${Localize.text('Before Block DX can be used, these last few steps must be completed:','configurationWindowComplete')}</p>
+                    <p style="${styles.p}">${Localize.text('Before Scalaris DX can be used, these last few steps must be completed:','configurationWindowComplete')}</p>
                     <p style="${styles.p}"><strong style="margin-right: 10px;">1)</strong> ${Localize.text('Open the wallets of any assets you\'ll be trading. If any are already open, you will need to restart them in order to activate the new configurations. Make sure that the wallets have been encrypted (Settings > Encrypt) and are fully unlocked (Settings > Unlock Wallet).','configurationWindowComplete')}</p>
-                    <p style="${styles.p}"><strong style="margin-right: 10px;">2)</strong> ${Localize.text('Open the <a href="#" class="text-link js-blocknetWalletLink">Blocknet wallet</a>. If it is already open, you will need to restart it in order to activate the new configurations. Make sure that the wallet has been encrypted (Settings > Encrypt) and is fully unlocked (Settings > Unlock Wallet).','configurationWindowComplete')}</p>
-                    <p style="${styles.p}"><strong style="margin-right: 10px;">3)</strong> ${Localize.text('Select RESTART to restart Block DX and begin trading.','configurationWindowComplete')}</p>
+                    <p style="${styles.p}"><strong style="margin-right: 10px;">2)</strong> ${Localize.text('Open the <a href="#" class="text-link js-scalarisWalletLink">Scalaris wallet</a>. If it is already open, you will need to restart it in order to activate the new configurations. Make sure that the wallet has been encrypted (Settings > Encrypt) and is fully unlocked (Settings > Unlock Wallet).','configurationWindowComplete')}</p>
+                    <p style="${styles.p}"><strong style="margin-right: 10px;">3)</strong> ${Localize.text('Select RESTART to restart Scalaris DX and begin trading.','configurationWindowComplete')}</p>
                   `
                 }
                 <div class="main-area" style="background-color:#0e2742;overflow-y:auto;"></div>
@@ -67,7 +67,7 @@ class ConfigurationComplete extends RouterView {
     const configurationType = state.get('configurationType');
     const addingWallets = configurationType === configurationTypes.ADD_NEW_WALLETS;
     const updatingWallets = configurationType === configurationTypes.UPDATE_WALLETS;
-    $('.js-blocknetWalletLink').on('click', e => {
+    $('.js-scalarisWalletLink').on('click', e => {
       e.preventDefault();
       remote.shell.openExternal('https://github.com/mraksoll4/scalaris/releases/latest');
     });

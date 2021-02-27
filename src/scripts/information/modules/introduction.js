@@ -7,7 +7,7 @@ const renderIntroduction = ({ Localize }) => {
           <div class="section-header-text">${Localize.text('Welcome to simplified, trustless, peer-to-peer trading!', 'informationWindowIntroduction')}</div>
         </div>
         <p>
-          ${Localize.text('Block DX is the fastest, most secure, most reliable, and most decentralized DEX. There are some differences when using a decentralized exchange verses a centralized exchange. Aside from there being no accounts, KYC, withdrawal limits, or withdrawal fees, below is a list of things you should know.', 'informationWindowIntroduction')}
+          ${Localize.text('Scalaris DX is the fastest, most secure, most reliable, and most decentralized DEX. There are some differences when using a decentralized exchange verses a centralized exchange. Aside from there being no accounts, KYC, withdrawal limits, or withdrawal fees, below is a list of things you should know.', 'informationWindowIntroduction')}
         </p>
       </div>
       <div class="section">
@@ -15,7 +15,7 @@ const renderIntroduction = ({ Localize }) => {
           <div class="section-header-text">${Localize.text('Connected Wallets', 'informationWindowIntroduction')}</div><div class="section-header-line"></div>
         </div>
         <p>
-          ${Localize.text('Since trading is peer-to-peer, you must have the wallet of each asset being traded installed, synced, and configured. Configuration was done when starting Block DX the first time, but you can reconfigure to add new wallets for trading using the Add & Update Wallets menu link.', 'informationWindowIntroduction')}
+          ${Localize.text('Since trading is peer-to-peer, you must have the wallet of each asset being traded installed, synced, and configured. Configuration was done when starting Scalaris DX the first time, but you can reconfigure to add new wallets for trading using the Add & Update Wallets menu link.', 'informationWindowIntroduction')}
         </p>
       </div>
       <div class="section">
@@ -31,7 +31,7 @@ const renderIntroduction = ({ Localize }) => {
           <div class="section-header-text">${Localize.text('Address Types (Legacy, Segwit, p2sh, bech32)', 'informationWindowIntroduction')}</div><div class="section-header-line"></div>
         </div>
         <p>
-          ${Localize.text('At the moment only <em>"legacy"</em> addresses are compatible with Block DX.  Here are examples of various Bitcoin addresses:', 'informationWindowIntroduction')}
+          ${Localize.text('At the moment only <em>"legacy"</em> addresses are compatible with Scalaris DX.  Here are examples of various Bitcoin addresses:', 'informationWindowIntroduction')}
         </p>
         <p class="code">
           Legacy: 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2<br>
@@ -58,7 +58,7 @@ const renderIntroduction = ({ Localize }) => {
           <div class="section-header-text">${Localize.text('Order Types', 'informationWindowIntroduction')}</div><div class="section-header-line"></div>
         </div>
         <p>
-          ${Localize.text('At the moment Block DX does not support partial order fills. It uses what is called <em>"Exact"</em> orders, meaning that an order must be taken for the full amount. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.', 'informationWindowIntroduction')}
+          ${Localize.text('At the moment Scalaris DX does not support partial order fills. It uses what is called <em>"Exact"</em> orders, meaning that an order must be taken for the full amount. If you are a taker, multiple orders cannot be combined and taken as a single order with this order type. Market and Limit orders will be supported in a future release.', 'informationWindowIntroduction')}
         </p>
       </div>
       <div class="section">
@@ -66,7 +66,7 @@ const renderIntroduction = ({ Localize }) => {
           <div class="section-header-text">${Localize.text('Unlocked Wallet & Closing Wallet', 'informationWindowIntroduction')}</div><div class="section-header-line"></div>
         </div>
         <p>
-          ${Localize.text('Since trading utilizes the Blocknet wallet and the wallet of the assets being traded, these wallets must remain open and unlocked when trading. If the Blocknet wallet is closed, all orders will be canceled. If the Blocknet wallet is locked, all orders will fail. If the wallet of an asset being traded is closed or locked, all orders for that asset will fail. It is important to keep all wallets online until trades are fully completed.', 'informationWindowIntroduction')}
+          ${Localize.text('Since trading utilizes the Scalaris wallet and the wallet of the assets being traded, these wallets must remain open and unlocked when trading. If the Scalaris wallet is closed, all orders will be canceled. If the Scalaris wallet is locked, all orders will fail. If the wallet of an asset being traded is closed or locked, all orders for that asset will fail. It is important to keep all wallets online until trades are fully completed.', 'informationWindowIntroduction')}
         </p>
       </div>
       <div class="section">

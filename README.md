@@ -1,16 +1,16 @@
-![BLOCK DX](BLOCKDX.png)
+![SCALARIS DX](BLOCKDX.png)
 
-[Download Block DX](https://github.com/mraksoll4/scalaris-dx/releases/latest) |
+[Download Scalaris DX](https://github.com/mraksoll4/scalaris-dx/releases/latest) |
 -------------|
 
-BLOCK DX is a decentralized exchange dApp built on top of the [Blocknet Protocol](https://api.blocknet.co). This repository is maintained by the Blocknet Core Team. We encourage the community to create dApps on top of Blocknet. Please connect with our community on [Discord](https://discord.gg/2e6s7H8). More information about Blocknet can be found on the [Blocknet website](https://blocknet.co) and [documentation portal](https://docs.blocknet.co).
+SCALARIS DX is a decentralized exchange dApp built on top of the [Scalaris Protocol](https://api.scalaris.info). This repository is maintained by the Scalaris Core Team. We encourage the community to create dApps on top of Scalaris. Please connect with our community on [Discord](https://discord.gg/2e6s7H8). More information about Scalaris can be found on the [Scalaris website](https://scalaris.info) and [documentation portal](https://docs.scalaris.info).
 
-[Website](https://blockdx.com) | [API](https://api.blocknet.co) | [Documentation](https://docs.blocknet.co) | [Discord](https://discord.gg/2e6s7H8)
+[Website](https://scalaris.info) | [API](https://api.scalaris.info) | [Documentation](https://docs.scalaris.info) | [Discord](https://discord.gg/2e6s7H8)
 -------------|-------------|-------------|-------------
 
 # Dev Instructions
 
-Block DX requires the [Blocknet wallet](https://github.com/mraksoll4/scalaris/releases/latest) and the wallets of the assets you want to view a market for to be setup and synced.
+Scalaris DX requires the [Scalaris wallet](https://github.com/mraksoll4/scalaris/releases/latest) and the wallets of the assets you want to view a market for to be setup and synced.
 
 ## Build and run locally:
 
@@ -63,7 +63,7 @@ By downloading and using this software, you acknowledge that:
 
 The MIT License (MIT)
 
-Copyright (c) 2018 The Blocknet Developers
+Copyright (c) 2018 The Scalaris Developers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

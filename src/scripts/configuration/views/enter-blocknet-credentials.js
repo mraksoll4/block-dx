@@ -9,7 +9,7 @@ const defaults = require('../constants/default-values');
 const footerButtons = require('../snippets/footer-buttons');
 const sidebar = require('../snippets/sidebar');
 
-class EnterBlocknetCredentials extends RouterView {
+class EnterScalarisCredentials extends RouterView {
 
   constructor(options) {
     super(options);
@@ -28,7 +28,7 @@ class EnterBlocknetCredentials extends RouterView {
       username = state.get('username');
       password = state.get('password');
       state.set('rpcPort', ipcRenderer.sendSync('getPort'));
-      state.set('rpcIP', ipcRenderer.sendSync('getBlocknetIP'));
+      state.set('rpcIP', ipcRenderer.sendSync('getScalarisIP'));
     } else {
       const block = state.get('wallets').find(w => w.abbr === 'BLOCK');
       username = block.username;
@@ -53,22 +53,22 @@ class EnterBlocknetCredentials extends RouterView {
               ${col1}
               <div class="${standaloneRPCSettingsUpdate ? 'col2-no-margin' : 'col2'}">
 
-                <p style="${styles.p}">${Localize.text('In order to conduct peer-to-peer trades, Block DX requires access to the <a href="#" class="text-link js-blocknetWalletLink">Blocknet wallet</a>. Please enter the RPC credentials found in <em>blocknet.conf</em>.','configurationWindowBlocknetCredentials')}</p>
+                <p style="${styles.p}">${Localize.text('In order to conduct peer-to-peer trades, Scalaris DX requires access to the <a href="#" class="text-link js-scalarisWalletLink">Scalaris wallet</a>. Please enter the RPC credentials found in <em>scalaris.conf</em>.','configurationWindowScalarisCredentials')}</p>
                 <div class="main-area" style="${styles.mainArea}">
                   <div class="input-group">
-                    <label>${Localize.text('Blocknet RPC Port','configurationWindowBlocknetCredentials')}</label>
+                    <label>${Localize.text('Scalaris RPC Port','configurationWindowScalarisCredentials')}</label>
                     <input id="js-rpcPort" type="text" value="${state.get('rpcPort')}" />
                   </div>
                   <div class="input-group">
-                    <label>${Localize.text('Blocknet RPC User','configurationWindowBlocknetCredentials')}</label>
+                    <label>${Localize.text('Scalaris RPC User','configurationWindowScalarisCredentials')}</label>
                     <input id="js-rpcUser" type="text" value="${username}" />
                   </div>
                   <div class="input-group">
-                    <label>${Localize.text('Blocknet RPC Password','configurationWindowBlocknetCredentials')}</label>
+                    <label>${Localize.text('Scalaris RPC Password','configurationWindowScalarisCredentials')}</label>
                     <input id="js-rpcPassword" type="text" value="${password}" />
                   </div>
                   <div class="input-group">
-                    <label>${Localize.text('Blocknet IP','configurationWindowBlocknetCredentials')}</label>
+                    <label>${Localize.text('Scalaris IP','configurationWindowScalarisCredentials')}</label>
                     <input id="js-rpcIP" type="text" value="${state.get('rpcIP')}" />
                   </div>
                 </div>
@@ -115,11 +115,11 @@ class EnterBlocknetCredentials extends RouterView {
 
         if(!username || !password) {
           await swal({
-            title: Localize.text('Missing Credentials','configurationWindowBlocknetCredentials'),
-            text: Localize.text('You must enter credentials for {name} in order to continue.','configurationWindowBlocknetCredentials',{name: block.name}),
+            title: Localize.text('Missing Credentials','configurationWindowScalarisCredentials'),
+            text: Localize.text('You must enter credentials for {name} in order to continue.','configurationWindowScalarisCredentials',{name: block.name}),
             type: 'error',
             showConfirmButton: true,
-            confirmButtonText: Localize.text('OK','configurationWindowBlocknetCredentials')
+            confirmButtonText: Localize.text('OK','configurationWindowScalarisCredentials')
           });
           return;
         }
@@ -175,7 +175,7 @@ class EnterBlocknetCredentials extends RouterView {
       }
     });
 
-    $('.js-blocknetWalletLink').on('click', e => {
+    $('.js-scalarisWalletLink').on('click', e => {
       e.preventDefault();
       remote.shell.openExternal('https://github.com/mraksoll4/scalaris/releases/latest');
     });
@@ -184,4 +184,4 @@ class EnterBlocknetCredentials extends RouterView {
 
 }
 
-module.exports = EnterBlocknetCredentials;
+module.exports = EnterScalarisCredentials;

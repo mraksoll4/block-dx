@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('blocknet App', () => {
+describe('scalaris App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -9,6 +9,6 @@ describe('blocknet App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to BLOCKNET!');
+    expect(page.getParagraphText()).toEqual('Welcome to SCALARIS!');
   });
 });
